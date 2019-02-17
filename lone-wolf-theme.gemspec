@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors                 = ["Mani Kumar"]
 
   spec.summary                 = %q{A bootstrap based theme for solo entrepreneurs aka lone wolf.}
-  #TODO: spec.homepage                = "https://github.com/mmistakes/minimal-mistakes"
+  spec.homepage                = "https://github.com/manid2/lone-wolf-theme"
   spec.license                 = "MIT"
 
   spec.metadata["plugin_type"] = "theme"
