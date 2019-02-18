@@ -20,6 +20,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.2"
   spec.add_runtime_dependency "jekyll-gist", "~> 1.5"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.10"
+  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.5"
   spec.add_runtime_dependency "jekyll-data", "~> 1.0"
   spec.add_runtime_dependency "jemoji", "~> 0.10"
   spec.add_runtime_dependency "jekyll-include-cache", "~> 0.1"

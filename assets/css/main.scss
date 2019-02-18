@@ -4,5 +4,16 @@
 
 @charset "utf-8";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
+// Your variable overrides go here, e.g.:
+// $h1-font-size: 3rem;
+
+// import bootstrap and bootswatch
+@import "bootswatch/dist/{{ site.bootswatch_theme | default: 'united' }}/variables";
+@import "bootstrap/scss/bootstrap";
+@import "bootswatch/dist/{{ site.bootswatch_theme | default: 'united' }}/bootswatch";
+
+// other imports
+@import "lone-wolf-theme";
+//@import "layout.scss";
+@import "syntax-highlighting";
+@import "custom.scss";
