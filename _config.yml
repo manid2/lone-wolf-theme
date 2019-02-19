@@ -14,20 +14,22 @@
 # remote_theme           : "manid2/lone-wolf-theme"
 bootswatch_theme         : "united" # cerulean, sketchy, slate, spacelab, united
 
-# Site Settings
+# site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Lone Wolf Theme"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Lone Wolf Theme"
+description              : "An amazing website template for lone wolves aka solo entrepreneurs and freelancers."
 url                      : # the base hostname & protocol for your site e.g. "https://manid2.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "manid2/lone-wolf-theme"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/teaser_default.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/site_logo.png"
+logo                     : "/docs/assets/images/lwt_logo.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/site_logo.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : false # true, false (default)
 words_per_minute         : 200
+
+# comments settings
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
@@ -62,8 +64,12 @@ staticman:
 reCaptcha:
   siteKey                :
   secret                 :
+
+# feed
 atom_feed:
   path                   : # blank (default) uses feed.xml
+
+# site search settings
 search                   : # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
