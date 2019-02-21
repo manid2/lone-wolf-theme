@@ -1,0 +1,7 @@
+{% if site.search == true or page.layout == "search" %}
+  {%- assign search_provider = site.search_provider | default: "lunr" -%} 
+  {%- case search_provider -%} 
+    {%- when "google" -%} 
+      {% include_cached search/google-search-scripts.html %}
+  {%- endcase -%} 
+{% endif %}
