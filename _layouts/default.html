@@ -8,16 +8,18 @@
 {% include head.html %}
 
 <body>
-
-  {% include header.html %}
-
-  <main class="container mt-3" role="main">
-    {{ content }}  
-  </main>
-
-  {% include footer.html %}
+  <!-- page container -->
+  <div class="page-container">
+    <!-- page header -->
+    {% include header.html %}
+    <!-- page content -->
+    <main class="page-content" role="main">
+      {{ content }}
+    </main>
+    <!-- page footer -->
+    {% include footer.html %}
+  </div>
   {% include scripts.html %}
-
 </body>
 
 </html>
