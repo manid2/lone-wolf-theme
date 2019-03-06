@@ -1,23 +1,19 @@
 /* variables
 */
 
-// TODO: remove fixed height footer as it leads to bad looks, use flexbox
-$footer-height: 4rem;
-
 .page-container {
     position: relative;
     min-height: 100vh;
 }
 
 .page-content {
-    padding-bottom: $footer-height;    
-    /* Footer height */
+    padding-bottom: 1rem;    
 }
 
 .page-footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: $footer-height;
-    /* Footer height */
+    height: auto;
+    margin-top: 2rem;
 }
