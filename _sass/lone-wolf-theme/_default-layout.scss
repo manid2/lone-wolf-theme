@@ -1,13 +1,15 @@
-/* variables
-*/
+html,
+body {
+    height: 100%; // vh does not work on mobile devices
+}
 
 .page-container {
     position: relative;
-    min-height: 100vh;
+    min-height: 100%; // vh does not work on mobile devices
 }
 
 .page-content {
-    padding-bottom: 1rem;    
+    padding-bottom: 1rem;
 }
 
 .page-footer {
