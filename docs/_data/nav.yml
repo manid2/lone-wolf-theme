@@ -1,0 +1,18 @@
+# header links
+header:
+  - title: "Features"
+    url: "/features/"
+    description: "List of features in the theme"
+  - title: "Source"
+    url: "https://github.com/manid2/lone-wolf-theme/"
+    description: "Theme source code"
+  - title: "About"
+    url: "/about/"
+    description: "A little story about the theme"
+
+# footer links
+footer:
+  - title: "Mani Kumar"
+    url: "https://manid2.github.io/"
+    description: "Theme developer's home"
+
