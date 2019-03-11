@@ -5,12 +5,12 @@
       <div class="container">
         <div class="row">
           <div class="col-sm">
-            <img src="{{ site.url }}{{ site.baseurl }}/assets/images/lwt-logo-v1.svg"
-              alt="{{ site.title}} logo" height="32" width="32">
+            <img src="{{ site.url }}{{ site.baseurl }}/assets/images/lwt-logo-v1.svg" alt="{{ site.title}} logo"
+              height="32" width="32">
           </div>
         </div>
       </div>
-    </a>    
+    </a>
     <!-- TODO: write custom navbar toggle button to toggle navbar items 
       as the default one does not give expected behaviour when adding custom height to navbar -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-toggle-items"
@@ -19,18 +19,20 @@
     </button>
     <div class="collapse navbar-collapse" id="navbar-toggle-items">
       <ul class="navbar-nav mr-auto">
+        {%- for link in site.data.nav.header -%}
+          {%- if link.url contains '://' -%}
+            {%- assign url = link.url -%}
+          {%- else -%}
+            {%- assign url = link.url | relative_url -%}
+          {%- endif -%}
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="{{ url }}" {% if link.description %} title="{{ link.description }}" {% endif %}>{{ link.title }}</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Source</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
+        {%- endfor -%}
       </ul>
       <form class="form-inline">
-        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        <input class="form-control text-white" style="background: rgba(255, 220, 220, 0.4);" type="search"
+          placeholder="Search" aria-label="Search">
       </form>
     </div>
   </nav>
