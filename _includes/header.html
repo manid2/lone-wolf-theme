@@ -1,39 +1,34 @@
 <header class="navbar navbar-expand-lg navbar-dark bg-primary">
   <nav class="container">
     <!-- site home -->
-    <a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}/">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            <img src="{{ site.url }}{{ site.baseurl }}/assets/images/lwt-logo-v1.svg" alt="{{ site.title}} logo"
-              height="32" width="32">
-          </div>
+    <a class="navbar-brand" href="{{ site.url | relative_url }}/">
+      <div class="row">
+        <div class="col-sm">
+          <img src="{{ site.url | relative_url }}/assets/images/lwt-logo-v1.svg" alt="{{ site.title}} logo" height="32"
+            width="32">
         </div>
       </div>
     </a>
-    <!-- TODO: write custom navbar toggle button to toggle navbar items 
-      as the default one does not give expected behaviour when adding custom height to navbar -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-toggle-items"
-      aria-controls="navbar-toggle-items" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbar-toggle-items">
-      <ul class="navbar-nav mr-auto">
-        {%- for link in site.data.nav.header -%}
-          {%- if link.url contains '://' -%}
-            {%- assign url = link.url -%}
-          {%- else -%}
-            {%- assign url = link.url | relative_url -%}
-          {%- endif -%}
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url }}" {% if link.description %} title="{{ link.description }}" {% endif %}>{{ link.title }}</a>
-        </li>
-        {%- endfor -%}
-      </ul>
-      <form class="form-inline">
-        <input class="form-control text-white" style="background: rgba(255, 220, 220, 0.4);" type="search"
-          placeholder="Search" aria-label="Search">
-      </form>
-    </div>
+    <ul class="navbar-nav mr-auto">
+      {%- for link in site.data.nav.header -%}
+        {%- if link.url contains '://' -%}
+          {%- assign url = link.url -%}
+        {%- else -%}
+          {%- assign url = link.url | relative_url -%}
+        {%- endif -%}
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url }}" {% if link.description %} title="{{ link.description }}"
+          {% endif %}>{{ link.title }}</a>
+      </li>
+      {%- endfor -%}
+    </ul>
+    <!-- TODO: shorten on mobile devices -->
+    <form class="form-inline border rounded" style="background: rgba(255, 220, 220, 0.4);">
+      <button class="form-control bg-transparent btn border-0" type="button" id="btn_site_search">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </button>
+      <input class="form-control bg-transparent border-0 text-white d-none d-md-block d-lg-block d-xl-block" type="search" placeholder="Search..."
+        aria-label="Search">
+    </form>
   </nav>
 </header>
