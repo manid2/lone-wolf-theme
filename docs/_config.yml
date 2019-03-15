@@ -84,20 +84,6 @@ author:
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
-# site defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true
-
 # Reading Files
 include:
   - .htaccess
@@ -217,3 +203,18 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+# site defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+      search: true

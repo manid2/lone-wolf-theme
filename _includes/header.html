@@ -1,3 +1,6 @@
+<!-- TODO: make site search conditional -->
+{% assign search_enabled = true %}
+
 <header class="navbar navbar-expand-lg navbar-dark bg-primary">
   <nav class="container">
     <!-- site home -->
@@ -9,26 +12,29 @@
         </div>
       </div>
     </a>
-    <ul class="navbar-nav mr-auto">
-      {%- for link in site.data.nav.header -%}
-        {%- if link.url contains '://' -%}
-          {%- assign url = link.url -%}
-        {%- else -%}
-          {%- assign url = link.url | relative_url -%}
-        {%- endif -%}
-      <li class="nav-item">
-        <a class="nav-link" href="{{ url }}" {% if link.description %} title="{{ link.description }}"
-          {% endif %}>{{ link.title }}</a>
-      </li>
-      {%- endfor -%}
-    </ul>
-    <!-- TODO: shorten on mobile devices -->
-    <form class="form-inline border rounded" style="background: rgba(255, 220, 220, 0.4);">
-      <button class="form-control bg-transparent btn border-0" type="button" id="btn_site_search">
-        <i class="fa fa-search" aria-hidden="true"></i>
-      </button>
-      <input class="form-control bg-transparent border-0 text-white d-none d-md-block d-lg-block d-xl-block" type="search" placeholder="Search..."
-        aria-label="Search">
-    </form>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+      aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <!-- TODO add theme version dropdown here -->
+        {%- for link in site.data.nav.header -%}
+          {%- if link.url contains '://' -%}
+            {%- assign url = link.url -%}
+          {%- else -%}
+            {%- assign url = link.url | relative_url -%}
+          {%- endif -%}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url }}" {% if link.description %} title="{{ link.description }}"
+            {% endif %}>{{ link.title }}</a>
+        </li>
+        {%- endfor -%}
+      </ul>
+      <form class="form-inline border rounded" style="background: rgba(255, 220, 220, 0.4);">
+        <input class="form-control bg-transparent border-0 text-white" type="search" placeholder="Search..."
+          aria-label="Search">
+      </form>
+    </div>
   </nav>
 </header>

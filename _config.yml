@@ -3,15 +3,10 @@
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# Theme Settings
-#
-# Review documentation to determine if you should use `theme` or `remote_theme`
-# TODO link to docs
-
-# theme                  : "lone-wolf-theme"
-# remote_theme           : "manid2/lone-wolf-theme"
+theme                    : "lone-wolf-theme"
+remote_theme             : #"manid2/lone-wolf-theme"
 bootswatch_theme         : "united" # cerulean, sketchy, slate, spacelab, united
 
 # site Settings
@@ -88,20 +83,6 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
-
-# site defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true
 
 # Reading Files
 include:
@@ -216,10 +197,24 @@ tag_archive:
 #     category: /categories/:name/
 #     tag: /tags/:name/
 
-
 # HTML Compression
 # - http://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
     envs: development
+
+# site defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+      search: true

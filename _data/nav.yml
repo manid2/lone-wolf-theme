@@ -4,7 +4,7 @@ header:
     url: "/features/"
     description: "List of features in the theme"
   - title: "Source"
-    url: "https://github.com/manid2/lone-wolf-theme/"
+    url: "/source/"
     description: "Theme source code"
   - title: "About"
     url: "/about/"
@@ -14,5 +14,5 @@ header:
 footer:
   - title: "Mani Kumar"
     url: "https://manid2.github.io/"
-    description: "Theme developer's home"
+    description: "Mani Kumar home"
 
