@@ -2,6 +2,51 @@
 layout: default
 ---
 
-<section>
-  {{ content }}
+<section class="container-fluid">
+  <!-- Post hero image -->
+  <div class="row">
+    <div class="col-sm">
+      <div class="border mb-3" style="max-height: 640px">
+        <p class="text-center lead">Post Hero-Image</p>
+      </div>
+    </div>
+  </div>
+  <!-- Post Title and meta -->
+  <div class="row">
+    <div class="col-sm">
+      <div class="border mb-3">
+        <p class="text-center lead">Post Title and meta</p>
+      </div>
+    </div>
+  </div>
+  <!-- Page content -->
+  <div class="row">
+    <!-- Page TOC -->
+    <div class="col-sm-2">
+      <div class="border mb-3">
+        <p class="lead">Post TOC</p>
+      </div>
+    </div>
+    <!-- Page body -->
+    <div class="col-sm-8">
+      <!-- Post content -->
+      <div class="border mb-3">
+        <div class="col-sm">
+          {{ content }}
+        </div>
+      </div>
+      <!-- Post comments -->
+      <div class="border mb-3">
+        <div class="col-sm">
+          <p class="lead">Post comments</p>
+        </div>
+      </div>
+    </div>
+    <!-- Post author's profile -->
+    <div class="col-sm-2">
+      <div class="border">
+        <p class="lead">Author's profile</p>
+      </div>
+    </div>
+  </div>
 </section>
