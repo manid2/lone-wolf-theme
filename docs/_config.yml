@@ -18,7 +18,7 @@ description              : "An amazing website template for lone wolves aka solo
 url                      : https://manid2.github.io # the base hostname & protocol for your site
 baseurl                  : "/lone-wolf-theme" # the subpath of your site, e.g. "/blog"
 repository               : "manid2/lone-wolf-theme/docs"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "lwt-logo-v1.svg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/site_logo.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 words_per_minute         : 200
