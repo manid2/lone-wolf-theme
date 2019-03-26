@@ -2,48 +2,54 @@
 layout: default
 ---
 
-<section class="container-fluid">
-  <!-- Post hero image -->
+<section class="container">
+  <!-- Post hero image/video -->
   <div class="row">
     <div class="col-sm">
-      <div class="border mb-3" style="max-height: 640px">
-        <p class="text-center lead">Post Hero-Image</p>
+      <div class="border" style="max-height: 640px">
+        <!-- TODO: apply lightbox effect -->
+        <p class="text-center lead">Post Hero Image/Video</p>
       </div>
     </div>
   </div>
   <!-- Post Title and meta -->
   <div class="row">
     <div class="col-sm">
-      <div class="border mb-3">
-        <p class="text-center lead">Post Title and meta</p>
+      <div class="border">
+        <div class="row text-center">
+          <div class="col">
+            <h1>Post Title</h1>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col">
+            <small>Post Meta</small>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <!-- Page content -->
   <div class="row">
     <!-- Page TOC -->
-    <div class="col-sm-2">
-      <div class="border mb-3">
+    <div class="col-md-2">
+      <div class="border">
         <p class="lead">Post TOC</p>
       </div>
     </div>
     <!-- Page body -->
-    <div class="col-sm-8">
+    <div class="col-md-8">
       <!-- Post content -->
-      <div class="border mb-3">
-        <div class="col-sm">
-          {{ content }}
-        </div>
+      <div class="border">
+        {{ content }}
       </div>
       <!-- Post comments -->
-      <div class="border mb-3">
-        <div class="col-sm">
-          <p class="lead">Post comments</p>
-        </div>
+      <div class="border">
+        <p class="lead">Post comments</p>
       </div>
     </div>
     <!-- Post author's profile -->
-    <div class="col-sm-2">
+    <div class="col-md-2">
       <div class="border">
         <p class="lead">Author's profile</p>
       </div>

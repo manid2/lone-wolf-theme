@@ -2,75 +2,50 @@
 layout: default
 ---
 
-<section class="container border">
+<section class="container">
     <!-- Archive title -->
-    <div class="row m-3">
+    <div class="row mb-3">
         <div class="col-sm">
             <h1>{{ page.title | default: 'Posts' }}</h1>
         </div>
     </div>
-    <!-- Archive content - paginated posts -->
+    <!-- Archive content - list of posts -->
     <div class="row">
         <div class="col-sm">
             {% for post in site.posts %}
+            <!-- TODO use hover.css to animate on hover -->
             <a href="{{ post.url | absolute_url }}">
-                <div class="row m-3">
-                    <div class="col-sm-8 m-3">
-                        <div class="row">
-                            <h2>{{ post.title | truncate: 50 }}</h3>
-                        </div>
-                        <div class="row">
-                            <p><small>{{ post.date | date: "%b %-d, %Y" }}</small></p>
-                        </div>
-                        <div class="row">
-                            <small>{{ post.excerpt | strip_html | strip_newlines | truncate: 180 }}</small>
-                        </div>
-                    </div>
-                    <div class="col-sm-2 m-3">
+                <div class="row mb-4 border">
+                    <div class="col-sm-2">
                         {% if post.img %}
                         <img width=100% height=100% src="{{ '' | absolute_url }}/assets/images/{{ post.header.teaser }}"
                             alt="{{ post.title }}">
                         {% else %}
-                        <img width=100% height=100% src="{{ '' | absolute_url }}/assets/images/{{ site.teaser }}" alt="{{ site.title }} logo">
+                        <img width=100% height=100% src="{{ '' | absolute_url }}/assets/images/{{ site.teaser }}"
+                            alt="{{ site.title }} logo">
                         {% endif %}
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="row">
+                            <div class="col-sm">
+                                <h2>{{ post.title | truncate: 50 }}</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm">
+                                <p><small>{{ post.date | date: "%b %-d, %Y" }}</small></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm">
+                                <small>{{ post.excerpt | strip_html | strip_newlines | truncate: 180 }}</small>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </a>
             {% endfor %}
         </div>
     </div>
-    <!-- Archive pagination links -->
-    <div class="row">
-        <div class="col-sm">
-            {% if paginator.total_pages > 1 %}
-            <ul class="pagination pagination-sm">
-                {% if paginator.previous_page %}
-                <li class="page-item">
-                    <a class="page-link" href="{{ paginator.previous_page_path }}">Prev</a>
-                </li>
-                {% else %}
-                <li class="page-item disabled">
-                    <span class="page-link">Prev</span>
-                </li>
-                {% endif %}
-
-                <li class="page-item active">
-                    <span class="page-link">
-                        Page: {{ paginator.page }} of {{ paginator.total_pages }}
-                    </span>
-                </li>
-
-                {% if paginator.next_page %}
-                <li class="page-item">
-                    <a class="page-link" href="{{ paginator.next_page_path }}">Next</a>
-                </li>
-                {% else %}
-                <li class="page-item disabled">
-                    <span class="page-link">Next</span>
-                </li>
-                {% endif %}
-            </ul>
-            {% endif %}
-        </div>
-    </div>
+    <!-- TODO need a load on request when posts are high -->
 </section>
