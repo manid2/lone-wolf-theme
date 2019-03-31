@@ -1,24 +1,68 @@
 ---
-layout: default
+layout: home
 permalink: /
+
+title: "LWT"
+excerpt: "Simple, elegant and efficient website theme for solo freelancers."
+
+feature_rows:
+  - title: "Apps"
+    excerpt: "List of apps."
+    url: "/apps/"
+    img_path: "feature_rows/pexels-torsten-dettlaff-apps.jpg"
+    img_alt: "Apps"
+  - title: "Blog"
+    excerpt: "List of recent blogs.."
+    url: "/blog/"
+    img_path: "feature_rows/pexels-pixabay-blog.jpg"
+    img_alt: "Blog"
+  - title: "TODO"
+    excerpt: "TODO items."
+    url: "/todo/"
+    img_path: "feature_rows/pexels-breakingpic-todo.jpg"
+    img_alt: "Apps"
 ---
 
-<section class="container mb-2">
+<article>
   <div class="row">
-    <div class="col-sm">
-      <h1>Hello World</h1>
+    <div class="col">
+      <h2>Introduction</h2>
+      <p><strong>Lone Wolf Theme</strong> is infamous for abstracting away the UI code and help us focus only on the
+        <span class="badge badge-primary">content</span> and the <span class="badge badge-primary">functionalities</span>.</p>
+      <p>As an embedded systems software developer I often struggle with the UI for my personal website which hosts my
+        work portfolio.</p>
+      <p>Have used a freely available website theme for jekyll, like
+        <a href="https://mmistakes.github.io/minimal-mistakes/">minimal mistakes</a>.
+        But it didn't meet all my expectations besides I wanted to make minimal changes to the UI and make major changes
+        to the functionalities like:
+        </p><ul class="list-group d-inline-block">
+          <li class="list-group-item">
+            HTML-2-PDF conversion for blog posts
+          </li>
+          <li class="list-group-item">
+            Blog posts reading progress bar.
+          </li>
+          <li class="list-group-item">
+            Custom Animations.
+          </li>
+          <li class="list-group-item">
+            Idea submission form
+          </li>
+        </ul>
+      <p></p>
+      <p>So I decided to make my own theme which is simple, abstract, elegant and efficient.</p>
+      <p class="bg-secondary text-white p-3 rounded">It is aimed at the solo freelancers who host their <span class="badge badge-info">portfolios</span>,
+        take <span class="badge badge-info">ideas</span> form submission,
+        have a <span class="badge badge-info">todo</span> lists to achieve their goals and
+        host a <span class="badge badge-info">blog</span> to pen their thoughts.
+      </p>
     </div>
   </div>
+
   <div class="row">
-    <div class="col-sm">
-      <p>Testing my theme, <strong>Lone Wolf Theme</strong></p>
+    <div class="col">
       <h2>Posts Archive layout</h2>
-      <p>Testing: <a href="{{ '/posts/' | absolute_url }}">Archive layout for posts</a></p>
+      <p>Checkout: <a href="http://localhost:4000/posts/">Archive layout for posts</a></p>
     </div>
   </div>
-  <div class="row">
-    <div class="col-sm">
-      <!-- <img src="//via.placeholder.com/1140x520.png?text=Placeholder Image" class="img-fluid"> -->
-    </div>
-  </div>
-</section>
+</article>
