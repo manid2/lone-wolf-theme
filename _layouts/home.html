@@ -9,7 +9,8 @@ layout: default
         <h1>{{ page.title | default: 'HOME' }}</h1>
         <p class="lead">{{ page.excerpt | default: 'Excerpt' }}</p>
         <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-          <button type="button" class="btn btn-success"><i class="fas fa-arrow-down"></i><span class="pl-1">Download</span></button>
+          <button type="button" class="btn btn-success"><i class="fas fa-arrow-down"></i><span
+              class="pl-1">Download</span></button>
           <div class="btn-group" role="group">
             <button id="btnGroupDrop2" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false"></button>
@@ -28,33 +29,35 @@ layout: default
   <div class="row">
     {% for f_row in page.feature_rows %}
     <!-- TODO use animate.css to animate on hover -->
-    <a href="{{ f_row.url | absolute_url }}">
-      <div class="card border-success m-3" style="max-width: 20rem;">
-        {% if f_row.img_path %}
-        {% capture img_path %}
-        {{ '' | absolute_url }}/assets/images/{{ f_row.img_path }}
-        {% endcapture %}
-        {% endif %}
+    <div class="col-md-4 p-0">
+      <a href="{{ f_row.url | absolute_url }}">
+        <div class="card border-success m-3">
+          {% if f_row.img_path %}
+          {% capture img_path %}
+          {{ '' | absolute_url }}/assets/images/{{ f_row.img_path }}
+          {% endcapture %}
+          {% endif %}
 
-        {% if f_row.img_alt %}
-        {% capture img_alt %}
-        {{ f_row.img_alt | default: 'Feature image' }}
-        {% endcapture %}
-        {% endif %}
+          {% if f_row.img_alt %}
+          {% capture img_alt %}
+          {{ f_row.img_alt | default: 'Feature image' }}
+          {% endcapture %}
+          {% endif %}
 
-        <div class="card-header">
-          <h2>{{ f_row.title | strip | strip_html | strip_newlines | truncate: 10 }}</h2>
+          <div class="card-header">
+            <h2>{{ f_row.title | strip | strip_html | strip_newlines | truncate: 10 }}</h2>
+          </div>
+
+          {% if img_path %}
+          <img class="img-fluid" src="{{ img_path | strip }}" alt="{{ img_alt | strip }}">
+          {% endif %}
+
+          <div class="card-body">
+            <p class="card-text">{{ f_row.excerpt | strip | strip_html | strip_newlines | truncate: 200 }}</p>
+          </div>
         </div>
-
-        {% if img_path %}
-        <img class="img-fluid" src="{{ img_path | strip }}" alt="{{ img_alt | strip }}">
-        {% endif %}
-
-        <div class="card-body">
-          <p class="card-text">{{ f_row.excerpt | strip | strip_html | strip_newlines | truncate: 200 }}</p>
-        </div>
-      </div>
-    </a>
+      </a>
+    </div>
     {% endfor %}
   </div>
   {% endif%}
