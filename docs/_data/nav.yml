@@ -12,7 +12,28 @@ header:
 
 # footer links
 footer:
-  - title: "Mani Kumar"
+  - owner: "Mani Kumar"
     url: "https://manid2.github.io/"
-    description: "Theme developer's home"
-
+    description: "Mani Kumar home"
+    bio: "A Software Engineer with magical skills to empower individual business persons."
+    address: "Bangalore, KA, India."
+  - social:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/manid2"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/manid2/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/mani_d2"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/mani_d2/"
+  - feed:
+    - label: "Sitemap"
+      icon: "fas fa-sitemap"
+      url: "/sitemap.xml"
+    - label: "RSS"
+      icon: "fas fa-fw fa-rss-square"
+      url: "/feed.xml"

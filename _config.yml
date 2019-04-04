@@ -12,9 +12,7 @@ bootswatch_theme         : "united" # cerulean, sketchy, slate, spacelab, united
 # site Settings
 locale                   : "en-US"
 title                    : "Lone Wolf Theme"
-title_separator          : "-"
-name                     : "Lone Wolf Theme"
-description              : "An amazing website template for lone wolves aka solo entrepreneurs and freelancers."
+description              : "Simple, elegant and efficient website theme for solo freelancers."
 url                      : # the base hostname & protocol for your site e.g. "https://manid2.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "manid2/lone-wolf-theme"
@@ -56,33 +54,6 @@ analytics:
   google:
     tracking_id          :
     anonymize_ip         : # true, false (default)
-
-# Site Author
-author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/owner_pic.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:your.name@email.com
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
 
 # Reading Files
 include:

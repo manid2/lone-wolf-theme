@@ -1,11 +1,52 @@
+{% assign owner = site.data.nav.footer[0] %}
+{% assign social = site.data.nav.footer[1] %}
+{% assign feed = site.data.nav.footer[2] %}
+
 <footer class="page-footer bg-light">
     <div class="container mt-2">
-        <div class="row">
-            <div class="col-sm">
-                <p>Made by
-                    <a href="{{ site.data.nav.footer[0].url }}" {% if site.data.nav.footer[0].description %}
-                        title="{{ site.data.nav.footer[0].description }}" {% endif %}>
-                        {{ site.data.nav.footer[0].title }}</a>.
+        <div class="row pt-3 pb-3">
+            <div class="col-md-4 border-right border-primary small text-center">
+                <!-- owner info -->
+                <p class="m-0">Owned by
+                    <a href="{{ owner.url }}" {% if owner.description %} title="{{ owner.description }}" {% endif %}>
+                        {{ owner.owner }}</a>.
+                </p>
+                <p class="m-0 font-italic">{{ owner.bio }}</p>
+                <p class="m-0"><i class="fas fa-map-marker-alt"></i><span class="pl-1">{{ owner.address }}</span></p>
+            </div>
+            <div class="col-md-8 small text-center">
+                <!-- Social media links -->
+                <div class="row">
+                    <div class="col">
+                        <ul class="list-inline">
+                            <li class="list-inline-item text-info">Social: </li>
+                            {% for so_link in social.social %}
+                            <li class="list-inline-item"><a href="{{ so_link.url }}"><i class="{{ so_link.icon }}"></i>
+                                    {{ so_link.label }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                <!-- website feed links -->
+                <div class="row">
+                    <div class="col">
+                        <ul class="list-inline">
+                            <li class="list-inline-item text-info">Feed: </li>
+                            {% for fd_link in feed.feed %}
+                            <li class="list-inline-item"><a href="{{ '' | absolute_url | append: fd_link.url }}"><i class="{{ fd_link.icon }}"></i>
+                                    {{ fd_link.label }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-3 pb-3 border-top border-primary">
+            <div class="col small text-center">
+                <!-- copyright info -->
+                <p>Copyright &copy; {{ owner.owner }}, {{ "now" | date: "%Y" }}. Website theme <a
+                        href="https://github.com/manid2/lone-wolf-theme/">LWT</a>
+                    for <a href="https://jekyllrb.com/">Jekyll</a>
                 </p>
             </div>
         </div>
