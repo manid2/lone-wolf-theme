@@ -5,7 +5,7 @@
 <footer class="page-footer bg-light">
     <div class="container mt-2">
         <div class="row pt-3 pb-3">
-            <div class="col-md-4 border-right border-primary small text-center">
+            <div class="col-md-4 pb-3 small text-center">
                 <!-- owner info -->
                 <p class="m-0">Owned by
                     <a href="{{ owner.url }}" {% if owner.description %} title="{{ owner.description }}" {% endif %}>
@@ -41,7 +41,7 @@
                 </div>
             </div>
         </div>
-        <div class="row pt-3 pb-3 border-top border-primary">
+        <div class="row pt-3 pb-3 border-top border-success">
             <div class="col small text-center">
                 <!-- copyright info -->
                 <p>Copyright &copy; {{ owner.owner }}, {{ "now" | date: "%Y" }}. Website theme <a
