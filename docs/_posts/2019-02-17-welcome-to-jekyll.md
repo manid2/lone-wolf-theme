@@ -2,7 +2,12 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2019-02-17 14:30:34 +0530
-categories: jekyll update
+categories: tutorials
+
+header:
+  teaser: coding-langs.jpg
+  alt: sample post 1
+  caption: testing post caption
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

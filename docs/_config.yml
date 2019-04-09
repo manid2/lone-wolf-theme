@@ -183,9 +183,7 @@ defaults:
       type: posts
     values:
       layout: post
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true
-      search: true
+      show_hero: true
+      show_author: true
+      show_comments: true
+      show_ads: true
