@@ -185,5 +185,7 @@ defaults:
       layout: post
       show_hero: true
       show_author: true
+      show_toc: true
+      share: true
       show_comments: true
       show_ads: true

@@ -1,0 +1,21 @@
+# blog authors
+authors:
+  - name: "Blog Author"
+    headline: "Awesome blogger."
+    avatar: # display_picture.jpg
+    follow:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: # link
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: # link
+
+# blog post share links
+share:
+  - label: "LinkedIn"
+    icon: "fab fa-fw fa-linkedin"
+    url: # link
+  - label: "Twitter"
+    icon: "fab fa-fw fa-twitter-square"
+    url: # link

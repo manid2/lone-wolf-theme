@@ -1,0 +1,21 @@
+# blog authors
+authors:
+  - name: "Mani Kumar"
+    headline: "Freelance content writer and software engineer."
+    avatar: "manid2_pp_1.jpg"
+    follow:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/manid2"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/manid2/"
+
+# blog post share links
+share:
+  - label: "LinkedIn"
+    icon: "fab fa-fw fa-linkedin"
+    url: "https://www.linkedin.com/in/manid2/"
+  - label: "Twitter"
+    icon: "fab fa-fw fa-twitter-square"
+    url: "https://twitter.com/mani_d2"
