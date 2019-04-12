@@ -1,0 +1,76 @@
+@import "../bootstrap/scss/bootstrap";
+
+/*
+ archive-posts style classes
+=============================*/
+/* TODO: need to learn scss extend, inherit, combine
+ .archive-post-list- {
+    &.img {
+
+    }
+} */
+
+/*
+ Table of contents navigation
+=============================*/
+.blog-post-toc {
+    ul {
+        @extend .pl-3;
+        list-style: none;
+    }
+}
+
+/*
+ Blog post author info
+======================*/
+.blog-post {
+    &-hero-img {
+        max-height: 640px;
+    }
+
+    &-author {
+        &-avatar {
+            width: 64px;
+            height: 64px;
+            padding: 0.15rem;
+
+            @include media-breakpoint-down(md) {
+                width: 32px;
+                height: 32px;
+                padding: 0.10rem;
+            }
+        }
+
+        &-name {
+            font-size: 1.0rem;
+            padding: 0.15rem;
+
+            @include media-breakpoint-down(md) {
+                font-size: 0.8rem;
+                padding: 0.15rem;
+            }
+        }
+
+        &-headline {
+            font-size: 0.8rem;
+            padding: 0.15rem;
+
+            @include media-breakpoint-down(md) {
+                font-size: 0.6rem;
+                padding: 0.10rem;
+            }
+        }
+
+        &-follow button {
+            font-size: 1.0rem;
+            padding:4px 9px;
+            line-height: 1.8;
+
+            @include media-breakpoint-down(md) {
+                font-size: 0.8rem;                
+                line-height: 1.6;
+                padding:2px 4px;
+            }
+        }
+    }
+}

@@ -25,13 +25,13 @@ layout: default
 {{ blog_author.name }} avatar.
 {% endcapture %}
 
-<section class="container mt-5">
+<section class="container mt-5 blog-post">
   <div class="row">
     <div class="col-md-8 pb-3">
       {% if page.show_hero %}
       <!-- post hero -->
       <figure class="figure">
-        <img class="img-fluid" style="max-height: 640px" src="{{ img_path | strip }}" alt="{{ img_alt | strip }}">
+        <img class="img-fluid shadow rounded mb-2 blog-post-hero-img" src="{{ img_path | strip }}" alt="{{ img_alt | strip }}">
         <figcaption class="figure-caption text-center">{{ img_cap | strip }}</figcaption>
       </figure>
       {% endif %}
@@ -40,27 +40,27 @@ layout: default
       <p class="small font-italic text-secondary">{{ page.date | date: "%b %-d, %Y" }}</p>
       {% if page.show_author %}
       <!-- post author, share -->
-      <div class="row py-3 border-top border-bottom">
-        <div class="col-md-2">
-          <img src="{{ bl_au_avatar }}" alt="{{ bl_au_av_alt }}" class="rounded-circle" width="64px" height="64px">
+      <div class="row align-items-center py-2 border-top border-bottom blog-post-author">
+        <div class="col-auto pr-0 pb-1">
+          <img src="{{ bl_au_avatar | strip }}" alt="{{ bl_au_av_alt | strip }}" class="rounded-circle shadow-sm blog-post-author-avatar ">
         </div>
-        <div class="col-md-8">
+        <div class="col pr-0 pb-1">
           <div class="row">
             <div class="col">
-              <span class="h5 pb-1 text-dark">{{ blog_author.name }}</span>
+              <span class="blog-post-author-name text-dark">{{ blog_author.name }}</span>
             </div>
           </div>
           <div class="row">
             <div class="col text-truncate">
-              <span class="h6 pb-3 text-info">{{ blog_author.headline }}</span>
+              <span class="blog-post-author-headline text-info">{{ blog_author.headline }}</span>
             </div>
           </div>
         </div>
-        <div class="col-md-2">
+        <div class="col-auto justify-content-end blog-post-author-follow">
           <div class="dropdown">
             <button class="btn btn-outline-info dropdown-toggle" type="button" id="followMenuButton"
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Follow</button>
-            <div class="dropdown-menu" aria-labelledby="followMenuButton">
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="followMenuButton">
               {% for follow in blog_author.follow %}
               <a class="dropdown-item pb-2 text-info" href="{{ follow.url }}"><i
                   class="{{ follow.icon }}"></i>{{ follow.label }}</a>
@@ -72,12 +72,15 @@ layout: default
       {% endif %}
       {% if page.show_toc %}
       <!-- post TOC -->
-      <div class="border mt-3">
-        <p class="lead">Post TOC</p>
-      </div>
+      <nav class="card mt-3 d-inline-block shadow-sm rounded">
+        <div class="card-header bg-info text-white"><i class="fas fa-list"></i><span class="pl-2 h5">Contents</span></div>
+        <div class="blog-post-toc pr-3">
+            {% include toc.html html=content %}
+        </div>
+      </nav>
       {% endif %}
       <!-- Post content -->
-      <article class="border mt-3">
+      <article class="mt-3" id="blog-post-article">
         {{ content }}
       </article>
       {% if page.share %}
