@@ -1,24 +1,30 @@
 @import "../bootstrap/scss/bootstrap";
 
-/*
- archive-posts style classes
-=============================*/
-/* TODO: need to learn scss extend, inherit, combine
- .archive-post-list- {
-    &.img {
+$heading-margin-top: 6px;
+$heading-margin-bottom: 4px;
 
-    }
-} */
-
-/*
- Table of contents navigation
-=============================*/
-.blog-post-toc {
-    ul {
-        @extend .pl-3;
-        list-style: none;
-    }
+h1 {
+    margin-top: $heading-margin-top * 6;
+    margin-bottom: $heading-margin-bottom * 6;
 }
+
+h2 {
+    margin-top: $heading-margin-top * 5;
+    margin-bottom: $heading-margin-bottom * 5;
+}
+
+h3 {
+    margin-top: $heading-margin-top * 4;
+    margin-bottom: $heading-margin-bottom * 4;
+}
+
+/*
+ archive-posts list of blog posts
+=============================*/
+/*
+TODO: implement like google chrome news articles recommendation list in smartphones.
+Requires smart crop.
+ */
 
 /*
  Blog post author info
@@ -26,6 +32,17 @@
 .blog-post {
     &-hero-img {
         max-height: 640px;
+    }
+
+    &-toc {
+        >ul {
+            @extend .pt-3;
+        }
+
+        ul {
+            @extend .pl-3;
+            list-style: none;
+        }
     }
 
     &-author {
@@ -63,13 +80,42 @@
 
         &-follow button {
             font-size: 1.0rem;
-            padding:4px 9px;
+            padding: 4px 9px;
             line-height: 1.8;
 
             @include media-breakpoint-down(md) {
-                font-size: 0.8rem;                
+                font-size: 0.8rem;
                 line-height: 1.6;
-                padding:2px 4px;
+                padding: 2px 4px;
+            }
+        }
+    }
+
+    &-article {
+        >h2 {
+            @extend .border-bottom;
+            @extend .pb-1;
+        }
+
+        /* Tables inside blog post */
+        >table {
+            @extend .table;
+            @extend .table-bordered;
+
+            thead {
+                @extend .bg-info;
+
+                th {
+                    @extend .p-2;
+                    @extend .font-weight-bold;
+                    @extend .text-white;
+                }
+            }
+
+            tbody {
+                td {
+                    @extend .p-2;
+                }
             }
         }
     }

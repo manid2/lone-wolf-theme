@@ -45,7 +45,7 @@ layout: default
           {% endif %}
 
           <div class="card-header">
-            <h2>{{ f_row.title | strip | strip_html | strip_newlines | truncate: 10 }}</h2>
+            <h2 class="m-0">{{ f_row.title | strip | strip_html | strip_newlines | truncate: 10 }}</h2>
           </div>
 
           {% if img_path %}
