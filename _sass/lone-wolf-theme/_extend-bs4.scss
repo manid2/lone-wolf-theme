@@ -59,22 +59,26 @@ Requires smart crop.
         }
 
         &-name {
-            font-size: 1.0rem;
-            padding: 0.15rem;
+            font-size: 1.0rem;            
+            line-height: 1.8;
+            font-weight: bold;
 
             @include media-breakpoint-down(md) {
                 font-size: 0.8rem;
-                padding: 0.15rem;
+                line-height: 1.6;
+                font-weight: bold;
             }
         }
 
         &-headline {
             font-size: 0.8rem;
-            padding: 0.15rem;
+            line-height: 1.6;
+            font-weight: normal;
 
             @include media-breakpoint-down(md) {
                 font-size: 0.6rem;
-                padding: 0.10rem;
+                line-height: 1.4;
+                font-weight: normal;
             }
         }
 
@@ -117,6 +121,13 @@ Requires smart crop.
                     @extend .p-2;
                 }
             }
+        }
+        
+        img {
+            @extend .img-fluid;
+            @extend .shadow;
+            @extend .rounded;
+            @extend .my-2;
         }
     }
 }

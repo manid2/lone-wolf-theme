@@ -3,8 +3,10 @@
  Code borrowed and modified from `minimal mistakes `.
  */
 
-.highlighter-rouge {
+code.highlighter-rouge {
   @extend .p-1;
+  background: $base04;
+  color: $base00;
 }
 
 .highlighter-rouge,
