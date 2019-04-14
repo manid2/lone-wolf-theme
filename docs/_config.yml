@@ -7,7 +7,7 @@
 
 theme                    : #"lone-wolf-theme"
 remote_theme             : "manid2/lone-wolf-theme"
-bootswatch_theme         : "united" # cerulean, sketchy, slate, spacelab, united
+bootswatch_theme         : "united" # cerulean, spacelab, united
 
 # site Settings
 locale                   : "en-US"

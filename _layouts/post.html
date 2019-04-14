@@ -36,7 +36,7 @@ layout: default
       </figure>
       {% endif %}
       <!-- post title -->
-      <h1>{{ page.title }}</h1>
+      <h1 class="mt-3 mb-1">{{ page.title }}</h1>
       <p class="small font-italic text-secondary">{{ page.date | date: "%b %-d, %Y" }}</p>
       {% if page.show_author %}
       <!-- post author, share -->
@@ -45,16 +45,8 @@ layout: default
           <img src="{{ bl_au_avatar | strip }}" alt="{{ bl_au_av_alt | strip }}" class="rounded-circle shadow-sm blog-post-author-avatar ">
         </div>
         <div class="col pr-0 pb-1">
-          <div class="row">
-            <div class="col">
-              <span class="blog-post-author-name text-dark">{{ blog_author.name }}</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col text-truncate">
-              <span class="blog-post-author-headline text-info">{{ blog_author.headline }}</span>
-            </div>
-          </div>
+          <p class="blog-post-author-name p-0 m-0">{{ blog_author.name }}</p>
+          <p class="blog-post-author-headline p-0 m-0">{{ blog_author.headline }}</p>
         </div>
         <div class="col-auto justify-content-end blog-post-author-follow">
           <div class="dropdown">
@@ -95,12 +87,9 @@ layout: default
       </div>
       {% endif %}
     </div>
-    {% if page.show_ads %}
+    <!-- blog post sidebar -->
     <div class="col-md-4">
-      <div class="border">
-        <p class="lead">Show Ads?</p>
-      </div>
+      {% include blog-post-sidebar.html %}
     </div>
-    {% endif %}
   </div>
 </section>
