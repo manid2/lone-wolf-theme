@@ -25,13 +25,14 @@ layout: default
 {{ blog_author.name }} avatar.
 {% endcapture %}
 
-<section class="container mt-5 blog-post">
+<section class="container mt-3 blog-post">
   <div class="row">
     <div class="col-md-8 pb-3">
       {% if page.show_hero %}
       <!-- post hero -->
       <figure class="figure">
-        <img class="img-fluid shadow rounded mb-2 blog-post-hero-img" src="{{ img_path | strip }}" alt="{{ img_alt | strip }}">
+        <img class="img-fluid shadow rounded mb-2 blog-post-hero-img" src="{{ img_path | strip }}"
+          alt="{{ img_alt | strip }}">
         <figcaption class="figure-caption text-center">{{ img_cap | strip }}</figcaption>
       </figure>
       {% endif %}
@@ -42,7 +43,8 @@ layout: default
       <!-- post author, share -->
       <div class="row align-items-center py-2 border-top border-bottom blog-post-author">
         <div class="col-auto pr-0 pb-1">
-          <img src="{{ bl_au_avatar | strip }}" alt="{{ bl_au_av_alt | strip }}" class="rounded-circle shadow-sm blog-post-author-avatar ">
+          <img src="{{ bl_au_avatar | strip }}" alt="{{ bl_au_av_alt | strip }}"
+            class="rounded-circle shadow-sm blog-post-author-avatar ">
         </div>
         <div class="col pr-0 pb-1">
           <p class="blog-post-author-name p-0 m-0">{{ blog_author.name }}</p>
@@ -65,9 +67,10 @@ layout: default
       {% if page.show_toc %}
       <!-- post TOC -->
       <nav class="card mt-3 d-inline-block shadow-sm rounded">
-        <div class="card-header bg-info text-white"><i class="fas fa-list"></i><span class="pl-2 h5">Contents</span></div>
+        <div class="card-header bg-info text-white"><i class="fas fa-list"></i><span class="pl-2 h5">Contents</span>
+        </div>
         <div class="blog-post-toc pr-3">
-            {% include toc.html html=content %}
+          {% include toc.html html=content %}
         </div>
       </nav>
       {% endif %}
@@ -76,20 +79,24 @@ layout: default
         {{ content }}
       </article>
       {% if page.share %}
-      <div class="border mt-3">
-        <p class="lead">Share post</p>
-      </div>
-      {% endif %}
-      {% if page.show_comments %}
-      <!-- Post comments -->
-      <div class="border mt-3">
-        <p class="lead">Post comments</p>
+      <div class="blog-post-social-share">
+        {% include social-share.html %}
       </div>
       {% endif %}
     </div>
     <!-- blog post sidebar -->
-    <div class="col-md-4">
+    <div class="col-md-4 blog-post-sidebar">
       {% include blog-post-sidebar.html %}
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-md-8">
+      {% if page.show_comments %}
+      <!-- Post comments -->
+      <div class="border">
+        <p class="lead">Post comments</p>
+      </div>
+      {% endif %}
     </div>
   </div>
 </section>

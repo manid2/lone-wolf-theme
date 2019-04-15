@@ -1,10 +1,25 @@
-<div class="border bg-light">
-    <h4 class="mt-3 mb-2">Recent posts</h4>
-     <p class="lead">Show recent posts</p>
-    <h4 class="mt-3 mb-2">Categories</h4>
-     <p class="lead">Show recent categories</p>
-    <h4 class="mt-3 mb-2">Tags</h4>
-     <p class="lead">Show recent tags</p>
+<div>
+    <h4>Recent posts</h4>
+    <ul>
+        {% for post in site.posts limit:5 %}
+        <li><a href="{{ post.url | absolute_url }}">{{ post.title | strip | strip_html }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <h4>Categories</h4>
+    <ul>
+        {% for category in site.categories limit:5 %}
+        <li><a href="#">{{ category[0] | strip | strip_html }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <h4>Tags</h4>
+    <ul>
+        {% for tag in site.tags limit:5 %}
+        <li><a href="#">{{ tag[0] | strip | strip_html }}</a></li>
+        {% endfor %}
+    </ul>
+
     {% if page.show_ads %}
     <p class="lead">Show Ads?</p>
     {% endif %}

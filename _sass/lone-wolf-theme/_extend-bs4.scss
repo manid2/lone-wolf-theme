@@ -1,4 +1,4 @@
-@import "../bootstrap/scss/bootstrap";
+@import "../bootstrap/scss/variables";
 
 $heading-margin-top: 6px;
 $heading-margin-bottom: 4px;
@@ -16,6 +16,11 @@ h2 {
 h3 {
     margin-top: $heading-margin-top * 4;
     margin-bottom: $heading-margin-bottom * 4;
+}
+
+h4 {
+    margin-top: $heading-margin-top * 3;
+    margin-bottom: $heading-margin-bottom * 3;
 }
 
 /*
@@ -59,7 +64,7 @@ Requires smart crop.
         }
 
         &-name {
-            font-size: 1.0rem;            
+            font-size: 1.0rem;
             line-height: 1.8;
             font-weight: bold;
 
@@ -122,12 +127,61 @@ Requires smart crop.
                 }
             }
         }
-        
+
         img {
             @extend .img-fluid;
             @extend .shadow;
             @extend .rounded;
             @extend .my-2;
+        }
+
+        img.emoji {
+            @extend .img-fluid;
+            @extend .rounded;
+            @extend .my-0;
+            @extend .shadow-none;
+        }
+    }
+
+    &-social-share {
+        @extend .my-3;
+        @extend .py-3;
+
+        >h4 {
+            @extend .pt-3;
+            @extend .text-dark;
+            @extend .border-top;
+            @extend .border-primary;
+        }
+
+        >a {
+            @extend .mb-1;
+
+            >span {
+                @extend .d-none;
+                @extend .d-sm-inline-block;
+            }
+        }
+    }
+
+    &-sidebar {
+        >div {
+            @extend .p-3;
+            background-color: $gray-200;
+
+            h4 {
+                @extend .pb-1;
+                @extend .border-bottom;
+                @extend .border-info;
+            }
+
+            ul {
+                @extend .pl-3;
+                @extend .pb-1;
+                li {
+                    @extend .text-truncate;
+                }
+            }
         }
     }
 }
