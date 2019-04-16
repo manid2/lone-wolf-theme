@@ -1,0 +1,33 @@
+{%- assign list_items = include.list_items -%}
+{%- assign list_type = include.list_type -%}
+
+<div class="archive-list">
+    {%- if list_type == "posts" -%}
+    {% assign posts_by_years = list_items | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+    {% for year in posts_by_years %}
+    <a data-toggle="collapse" href="#posts_in_{{ year.name }}" role="button" aria-expanded="false"
+        aria-controls="posts_in_{{ year.name }}">
+        <h2>{{ year.name }}</h2>
+    </a>
+    <div class="collapse show" id="posts_in_{{ year.name }}">
+        {% for post in year.items %}
+        {% include archive-single.html item=post %}
+        {% endfor %}
+    </div>
+    {% endfor %}
+    {%- else -%}
+    {% assign taxonomies = list_items %}
+    {% for taxonomy in taxonomies %}
+    {%- assign taxonomy[0] = taxonomy[0] | downcase | slugify -%}
+    <a data-toggle="collapse" href="#posts_in_{{ taxonomy[0] }}" role="button" aria-expanded="false"
+        aria-controls="posts_in_{{ taxonomy[0] }}">
+        <h2>{{ taxonomy[0] }}</h2>
+    </a>
+    <div class="collapse show" id="posts_in_{{ taxonomy[0] }}">
+        {% for post in taxonomy[1] %}
+        {% include archive-single.html item=post %}
+        {% endfor %}
+    </div>
+    {% endfor %}
+    {%- endif -%}
+</div>

@@ -1,0 +1,51 @@
+{%- assign item = include.item -%}
+
+<a href="{{ item.url | absolute_url }}">
+        <div class="row mb-4 border rounded">
+            {% if item.header.teaser %}
+                {% capture img_path %}
+                {{ '' | absolute_url }}/assets/images/{{ item.header.teaser }}
+                {% endcapture %}
+    
+                {% capture img_alt %}
+                {{ item.title }}
+                {% endcapture %}
+    
+            {% elsif site.teaser %}
+                {% capture img_path %}
+                {{ '' | absolute_url }}/assets/images/{{ site.teaser }}
+                {% endcapture %}
+    
+                {% capture img_alt %}
+                {{ site.title }} logo
+                {% endcapture %}
+            {% endif %}
+    
+            {% if img_path %}
+            <div class="col-sm-4 p-sm-0 text-center">
+                <img class="img-fluid" style="min-width: 60px; background-color: rgba(230, 235, 240, 0.8);"
+                    src="{{ img_path | strip }}" alt="{{ img_alt | strip }}">
+            </div>
+            {% endif %}
+            <div class="col-sm-8">
+                <div class="row mt-1">
+                    <div class="col">
+                        <h2 class="text-dark m-0">
+                            {{ item.title | strip | strip_html | strip_newlines | truncate: 60 }}</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <span
+                            class="small font-italic text-secondary">{{ item.date | date: "%b %-d, %Y" }}</span>
+                    </div>
+                </div>
+                <div class="row d-none d-sm-block">
+                    <div class="col">
+                        <span
+                            class="text-muted">{{ item.excerpt | strip | strip_html | strip_newlines | truncate: 180 }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>

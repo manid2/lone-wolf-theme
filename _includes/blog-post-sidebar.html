@@ -6,19 +6,25 @@
         {% endfor %}
     </ul>
 
+    {%- if page.categories.size > 0 -%}
     <h4>Categories</h4>
     <ul>
-        {% for category in site.categories limit:5 %}
-        <li><a href="#">{{ category[0] | strip | strip_html }}</a></li>
+        {% for category in page.categories limit:5 %}
+        <li><a
+                href="{{ '' | absolute_url }}/categories#posts_in_{{ category | slugify }}">{{ category | strip | strip_html }}</a>
+        </li>
         {% endfor %}
     </ul>
+    {%- endif -%}
 
+    {%- if page.tags.size > 0 -%}
     <h4>Tags</h4>
     <ul>
-        {% for tag in site.tags limit:5 %}
-        <li><a href="#">{{ tag[0] | strip | strip_html }}</a></li>
+        {% for tag in page.tags limit:5 %}
+        <li><a href="{{ '' | absolute_url }}/tags#posts_in_{{ tag | slugify }}">{{ tag | strip | strip_html }}</a></li>
         {% endfor %}
     </ul>
+    {%- endif -%}
 
     {% if page.show_ads %}
     <p class="lead">Show Ads?</p>

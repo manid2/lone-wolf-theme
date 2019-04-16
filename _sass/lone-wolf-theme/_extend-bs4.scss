@@ -26,10 +26,12 @@ h4 {
 /*
  archive-posts list of blog posts
 =============================*/
-/*
-TODO: implement like google chrome news articles recommendation list in smartphones.
-Requires smart crop.
- */
+/* TODO 
+.archive-list {
+    &-items {
+        
+    }
+} */
 
 /*
  Blog post author info
@@ -178,10 +180,28 @@ Requires smart crop.
             ul {
                 @extend .pl-3;
                 @extend .pb-1;
+
                 li {
                     @extend .text-truncate;
                 }
             }
         }
+    }
+}
+
+/*
+ site footer decoration
+ ======================*/
+.page-footer {
+    @extend .text-white;
+
+    &-owner {
+        @extend .py-3;
+        background: $gray-800;
+    }
+    
+    &-copyright {
+        @extend .py-3;
+        background: $gray-900;
     }
 }
