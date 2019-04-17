@@ -1,7 +1,7 @@
 {%- assign item = include.item -%}
 
 <a href="{{ item.url | absolute_url }}">
-        <div class="row mb-4 border rounded">
+        <div class="row no-gutters mb-4 border rounded">
             {% if item.header.teaser %}
                 {% capture img_path %}
                 {{ '' | absolute_url }}/assets/images/{{ item.header.teaser }}
@@ -27,7 +27,7 @@
                     src="{{ img_path | strip }}" alt="{{ img_alt | strip }}">
             </div>
             {% endif %}
-            <div class="col-sm-8">
+            <div class="col-sm-8 pl-3">
                 <div class="row mt-1">
                     <div class="col">
                         <h2 class="text-dark m-0">

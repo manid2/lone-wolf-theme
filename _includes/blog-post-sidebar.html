@@ -11,7 +11,7 @@
     <ul>
         {% for category in page.categories limit:5 %}
         <li><a
-                href="{{ '' | absolute_url }}/categories#posts_in_{{ category | slugify }}">{{ category | strip | strip_html }}</a>
+                href="{{ '' | absolute_url }}/categories#posts_in_{{ category | downcase | slugify }}_heading">{{ category | strip | strip_html }}</a>
         </li>
         {% endfor %}
     </ul>
@@ -21,7 +21,7 @@
     <h4>Tags</h4>
     <ul>
         {% for tag in page.tags limit:5 %}
-        <li><a href="{{ '' | absolute_url }}/tags#posts_in_{{ tag | slugify }}">{{ tag | strip | strip_html }}</a></li>
+        <li><a href="{{ '' | absolute_url }}/tags#posts_in_{{ tag | downcase | slugify }}_heading">{{ tag | strip | strip_html }}</a></li>
         {% endfor %}
     </ul>
     {%- endif -%}

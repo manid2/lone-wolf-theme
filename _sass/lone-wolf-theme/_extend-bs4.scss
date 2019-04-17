@@ -24,6 +24,26 @@ h4 {
 }
 
 /*
+ home page jumbotron background
+=============================*/
+.home-page {
+    &-header {
+        @extend .jumbotron;
+        @extend .jumbotron-fluid;
+
+        /* default backgrounds */
+        $bg-1: $red;
+        $bg-2: $yellow;
+        /* fallback for old browsers */
+        background: $bg-1;
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to top, $bg-1, $bg-2);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to top, $bg-1, $bg-2);
+    }
+}
+
+/*
  archive-posts list of blog posts
 =============================*/
 /* TODO 
@@ -196,10 +216,10 @@ h4 {
     @extend .text-white;
 
     &-owner {
-        @extend .py-3;
+        @extend .py-5;
         background: $gray-800;
     }
-    
+
     &-copyright {
         @extend .py-3;
         background: $gray-900;
