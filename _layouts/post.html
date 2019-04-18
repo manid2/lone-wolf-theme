@@ -37,7 +37,7 @@ layout: default
       </figure>
       {% endif %}
       <!-- post title -->
-      <h1 class="mt-3 mb-1">{{ page.title }}</h1>
+      <h1>{{ page.title }}</h1>
       <p class="small font-italic text-secondary">{{ page.date | date: "%b %-d, %Y" }}</p>
       {% if page.show_author %}
       <!-- post author, share -->
@@ -67,7 +67,7 @@ layout: default
       {% if page.show_toc %}
       <!-- post TOC -->
       <nav class="card mt-3 d-inline-block shadow-sm rounded">
-        <div class="card-header bg-info text-white"><i class="fas fa-list"></i><span class="pl-2 h5">Contents</span>
+        <div class="card-header bg-info text-white"><i class="fas fa-list"></i><span class="pl-1">Contents</span>
         </div>
         <div class="blog-post-toc pr-3">
           {% include toc.html html=content %}

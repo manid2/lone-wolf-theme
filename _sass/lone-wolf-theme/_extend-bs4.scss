@@ -1,26 +1,16 @@
 @import "../bootstrap/scss/variables";
 
-$heading-margin-top: 6px;
-$heading-margin-bottom: 4px;
-
-h1 {
-    margin-top: $heading-margin-top * 6;
-    margin-bottom: $heading-margin-bottom * 6;
+h1, h2, h3, h4, h5, h6 {
+    margin: 2rem 0rem;
 }
 
 h2 {
-    margin-top: $heading-margin-top * 5;
-    margin-bottom: $heading-margin-bottom * 5;
+    @extend .border-bottom;
+    @extend .pb-1;
 }
 
-h3 {
-    margin-top: $heading-margin-top * 4;
-    margin-bottom: $heading-margin-bottom * 4;
-}
-
-h4 {
-    margin-top: $heading-margin-top * 3;
-    margin-bottom: $heading-margin-bottom * 3;
+a h2, .card h2 {
+    @extend .border-0;
 }
 
 /*
@@ -32,14 +22,14 @@ h4 {
         @extend .jumbotron-fluid;
 
         /* default backgrounds */
-        $bg-1: $red;
-        $bg-2: $yellow;
+        $color-top: $primary;
+        $color-bottom: $light;
         /* fallback for old browsers */
-        background: $bg-1;
+        background: $color-bottom;
         /* Chrome 10-25, Safari 5.1-6 */
-        background: -webkit-linear-gradient(to top, $bg-1, $bg-2);
+        background: -webkit-linear-gradient(to top, $color-bottom, $color-top);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        background: linear-gradient(to top, $bg-1, $bg-2);
+        background: linear-gradient(to top, $color-bottom, $color-top);
     }
 }
 
@@ -123,11 +113,6 @@ h4 {
     }
 
     &-article {
-        >h2 {
-            @extend .border-bottom;
-            @extend .pb-1;
-        }
-
         /* Tables inside blog post */
         >table {
             @extend .table;
@@ -166,14 +151,14 @@ h4 {
     }
 
     &-social-share {
-        @extend .my-3;
+        @extend .my-5;
         @extend .py-3;
+        @extend .border-top;
+        @extend .border-bottom;
+        @extend .border-primary;
 
         >h4 {
-            @extend .pt-3;
             @extend .text-dark;
-            @extend .border-top;
-            @extend .border-primary;
         }
 
         >a {

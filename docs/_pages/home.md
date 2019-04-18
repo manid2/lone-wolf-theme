@@ -63,7 +63,7 @@ on the functionalities like:
   </li>
 </ul>
 
-<p class="bg-secondary text-white p-3 mb-4 rounded">It is aimed at the solo freelancers who host their <span
+<p class="bg-success text-white p-3 rounded">It is aimed at the solo freelancers who host their <span
     class="badge badge-info">portfolios</span>,
   take <span class="badge badge-info">ideas</span> form submission,
   have a <span class="badge badge-info">todo</span> lists to achieve their goals and
