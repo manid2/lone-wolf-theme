@@ -1,10 +1,7 @@
-<!-- TODO: make site search conditional -->
-{% assign search_enabled = true %}
-
 <header class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
   <nav class="container">
     <!-- site home -->
-    <a class="navbar-brand" href="{{ '' | absolute_url }}/">
+    <a class="navbar-brand" href="{{ '' | absolute_url }}">
       <div class="row">
         <div class="col">
           <img src="{{ '' | absolute_url }}/assets/images/lwt-logo-v1.svg" alt="{{ site.title }} logo" height="32"
@@ -31,10 +28,9 @@
         </li>
         {%- endfor -%}
       </ul>
-      <form class="form-inline border rounded" style="background: rgba(255, 220, 220, 0.4);" id="lwt-form-search">
-        <input class="form-control bg-transparent border-0 text-white" type="search" placeholder="Search..."
-          aria-label="Search">
-      </form>
+      {% if site.search == true %}
+        {%- include search-providers/search_form.html -%}
+      {% endif %}
     </div>
   </nav>
 </header>

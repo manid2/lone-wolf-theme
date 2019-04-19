@@ -159,5 +159,5 @@ defaults:
       show_author: true
       show_toc: true
       share: true
-      show_comments: true
+      show_comments: false
       show_ads: false

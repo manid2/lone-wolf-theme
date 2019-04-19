@@ -1,7 +1,7 @@
-{% if site.search == true or page.layout == "search" %}
-  {%- assign search_provider = site.search_provider | default: "lunr" -%} 
+{% if site.search == true %}
+  {%- assign search_provider = site.search_provider | default: "google" -%} 
   {%- case search_provider -%} 
     {%- when "google" -%} 
-      {% include search/google-search-scripts.html %}
+      {% include search-providers/google-search.html %}
   {%- endcase -%} 
 {% endif %}

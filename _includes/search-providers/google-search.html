@@ -10,7 +10,7 @@
   })();
 
   function googleCustomSearchExecute() {
-    var input = document.getElementById('cse-search-input-box-id');
+    var input = document.getElementById('lwt-form-search-input');
     var element = google.search.cse.element.getElement('searchresults-only0');
     if (input.value == '') {
       element.clearAllResults();
@@ -22,7 +22,7 @@
 
   {% if site.google.instant_search %}
     $(document).ready(function () {
-      $('input#cse-search-input-box-id').on('keyup', function () {
+      $('input#lwt-form-search-input').on('keyup', function () {
         googleCustomSearchExecute();
       });
     });
