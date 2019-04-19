@@ -3,10 +3,10 @@
 {%- assign dropdown_items = include.dropdown_items -%}
 
 <div class="btn-group animated rubberBand delay-1s" role="group" aria-label="Button group with nested dropdown">
-    <button type="button" class="{{ action_btn.class }}">
+    <a class="{{ action_btn.class }}" href="{{ action_btn.url }}">
         <i class="{{ action_btn.fa_icon }}"></i>
         <span class="pl-1">{{ action_btn.label }}</span>
-    </button>
+    </a>
     {%- if dropdown -%}
     <div class="btn-group" role="group">
         <button id="btnGroupDrop2" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"
