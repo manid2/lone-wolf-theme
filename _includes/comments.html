@@ -1,10 +1,8 @@
-<div class="page__comments">
-  {% capture comments_label %}{{ "Leave a comment" }}{% endcapture %}
-  {% case site.comments.provider %}
-    {% when "disqus" %}
-      <h4 class="page__comments-title">{{ comments_label }}</h4>
-      <section id="disqus_thread"></section>
-    {% when "custom" %}
-      <section id="custom-comments"></section>
-  {% endcase %}
-</div>
+{% capture comments_label %}{{ "Leave a comment" }}{% endcapture %}
+<h4 class="text-dark">{{ comments_label }}</h4>
+{% case site.comments.provider %}
+  {% when "disqus" %}
+    <section id="disqus_thread"></section>
+  {% when "custom" %}
+    <section id="custom-comments"></section>
+{% endcase %}

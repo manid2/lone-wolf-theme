@@ -1,4 +1,4 @@
-{% if site.comments.provider and page.comments %}
+{% if site.comments.provider and page.show_comments %}
 {% case site.comments.provider %}
   {% when "disqus" %}
     {% include /comments-providers/disqus.html %}

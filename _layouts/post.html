@@ -93,9 +93,7 @@ layout: default
     <div class="col-md-8">
       {% if page.show_comments %}
       <!-- Post comments -->
-      <div class="border">
-        <p class="lead">Post comments</p>
-      </div>
+        {%- include comments.html -%}
       {% endif %}
     </div>
   </div>
