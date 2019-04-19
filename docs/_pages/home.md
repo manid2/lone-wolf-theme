@@ -9,11 +9,12 @@ action_btn:
   - label: "Download"
     fa_icon : "fas fa-download"
     class: "btn btn-lg btn-success"
+    url: "https://github.com/manid2/lone-wolf-theme/releases/latest"
   - dropdown: true
   - dropdown_items:
     - label: "v1.0.0"
-      url: "#"
-      #fa_icon: ""
+      url: "https://github.com/manid2/lone-wolf-theme/releases/tag/v1.0.0"
+      fa_icon: "fas fa-arrow-down"
 
 feature_rows:
   - title: "Apps"
