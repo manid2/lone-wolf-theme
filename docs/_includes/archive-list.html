@@ -1,0 +1,48 @@
+{%- assign list_items = include.list_items -%}
+{%- assign list_type = include.list_type -%}
+
+<div class="archive-list">
+    {%- if list_type == "posts" -%}
+    {% assign posts_by_years = list_items | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+    {% for year in posts_by_years %}
+    <a data-toggle="collapse" href="#posts_in_{{ year.name }}" role="button" aria-expanded="false"
+        aria-controls="posts_in_{{ year.name }}">
+        <h2 id="posts_in_{{ year.name }}_heading">{{ year.name }}</h2>
+    </a>
+
+    <p>
+        {%- if page.show_ads -%}
+            {%- include ads.html ad_src="google-adsense" ad_type="links" -%}
+        {%- endif -%}
+    </p>
+
+    <div class="collapse show" id="posts_in_{{ year.name }}">
+        {% for post in year.items %}
+            {% include archive-single.html item=post %}
+        {% endfor %}
+    </div>
+    {% endfor %}
+    
+    {%- else -%}    
+    {% assign taxonomies = list_items %}    
+    {% for taxonomy in taxonomies %}
+    {%- capture tax_0 -%} {{ taxonomy[0] | downcase | slugify }} {%- endcapture -%}
+    <a data-toggle="collapse" href="#posts_in_{{ tax_0 }}" role="button" aria-expanded="false"
+        aria-controls="posts_in_{{ tax_0 }}">
+        <h2 id="posts_in_{{ tax_0 }}_heading">{{ tax_0 }}</h2>
+    </a>
+
+    <p>
+    {%- if page.show_ads -%}
+        {%- include ads.html ad_src="google-adsense" ad_type="links" -%}
+    {%- endif -%}
+    </p>
+
+    <div class="collapse show" id="posts_in_{{ tax_0 }}">
+        {% for post in taxonomy[1] %}
+            {% include archive-single.html item=post %}
+        {% endfor %}
+    </div>
+    {% endfor %}
+    {%- endif -%}
+</div>

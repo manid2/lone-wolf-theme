@@ -1,0 +1,32 @@
+<div>
+    <h4>Recent posts</h4>
+    <ul>
+        {% for post in site.posts limit:5 %}
+        <li><a href="{{ post.url | absolute_url }}">{{ post.title | strip | strip_html }}</a></li>
+        {% endfor %}
+    </ul>
+
+    {%- if page.categories.size > 0 -%}
+    <h4>Categories</h4>
+    <ul>
+        {% for category in page.categories limit:5 %}
+        <li><a
+                href="{{ '' | absolute_url }}/categories#posts_in_{{ category | downcase | slugify }}_heading">{{ category | strip | strip_html }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    {%- endif -%}
+
+    {%- if page.tags.size > 0 -%}
+    <h4>Tags</h4>
+    <ul>
+        {% for tag in page.tags limit:5 %}
+        <li><a href="{{ '' | absolute_url }}/tags#posts_in_{{ tag | downcase | slugify }}_heading">{{ tag | strip | strip_html }}</a></li>
+        {% endfor %}
+    </ul>
+    {%- endif -%}
+
+    {% if page.show_ads %}
+        {%- include ads.html ad_src="google-adsense" ad_type="links" -%}
+    {% endif %}
+</div>

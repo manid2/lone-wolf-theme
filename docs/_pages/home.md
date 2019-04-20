@@ -34,6 +34,12 @@ feature_rows:
     img_alt: "Apps"
 ---
 
+<p>
+{%- if page.show_ads -%}
+  {%- include ads.html ad_src="google-adsense" ad_type="in-article" -%}
+{%- endif -%}
+</p>
+
 ## Introduction
 
 **Lone Wolf Theme** is infamous for abstracting away the UI code and help us focus only on the
@@ -83,6 +89,12 @@ Easiest way to use the theme if you dont want to make changes to the theme's cod
 
 If you want to make changes to the code and to truly own the site.
 Follow the blog on smashing magazine to learn about this method [here][2].
+
+<p>
+{%- if page.show_ads -%}
+  {%- include ads.html ad_src="google-adsense" ad_type="in-article" -%}
+{%- endif -%}
+</p>
 
 ### As a ruby gem
 

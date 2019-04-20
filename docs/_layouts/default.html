@@ -1,0 +1,31 @@
+---
+#layout: compress # enable only if needed
+---
+
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+  <!-- page container -->
+  <div class="page-container">
+    <!-- page header -->
+    {% include header.html %}
+    <!-- page content -->
+    <main class="page-content" role="main">
+      {{ content }}
+
+      <section>
+        {%- if page.show_ads -%}
+          {%- include ads.html ad_src="google-adsense" ad_type="display" -%}
+        {%- endif -%}
+      </section>
+    </main>
+    <!-- page footer -->
+    {% include footer.html %}
+  </div>
+  {% include scripts.html %}
+</body>
+
+</html>

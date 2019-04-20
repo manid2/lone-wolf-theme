@@ -1,0 +1,59 @@
+{%- assign ad_type = include.ad_type -%}
+
+<!-- Google AdSense code - begin -->
+{%- case ad_type -%}
+    {%- when "display" -%}
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- display-ads -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-3938072282835038"
+        data-ad-slot="9050168677"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    {%- when "links" -%}
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- link-ads -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-3938072282835038"
+        data-ad-slot="2903616626"
+        data-ad-format="link"
+        data-full-width-responsive="true"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    {%- when "in-feed" -%}
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-format="fluid"
+        data-ad-layout-key="-7i+et+1m-5w+4a"
+        data-ad-client="ca-pub-3938072282835038"
+        data-ad-slot="8814720175"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    {%- when "in-article" -%}
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+        style="display:block; text-align:center;"
+        data-ad-layout="in-article"
+        data-ad-format="fluid"
+        data-ad-client="ca-pub-3938072282835038"
+        data-ad-slot="5119975602"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    {%- else -%}
+        No Ads
+        {: .lead}
+{%- endcase -%}
+<!-- Google AdSense code - end -->
