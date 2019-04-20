@@ -7,17 +7,17 @@ permalink: /about/
 <div class="mt-3 mb-3">
     <p class="mb-4"><em>A short story behind making of this theme</em></p>
 
+    <p>
+        {%- if page.show_ads -%}
+            {%- include ads.html ad_src="google-adsense" ad_type="in-article" -%}
+        {%- endif -%}
+    </p>
+
     <p>This is <span class="text-info">lone-wolf-theme</span> for Jekyll websites.
         Developed as an exercise for my web development skills.
         As a part time solo freelancer I faced bad experiences in dealing with the clients.
         Due to no established processes and formal communications people did not take me seriously.
         Also ended up working without pay for some time.
-    </p>
-
-    <p>
-    {%- if page.show_ads -%}
-        {%- include ads.html ad_src="google-adsense" ad_type="in-article" -%}
-    {%- endif -%}
     </p>
 
     <p>So I felt the need to formalize the communication process with the clients.
@@ -38,10 +38,10 @@ permalink: /about/
     {%- endif -%}
     </p>
     
-    <h2><i class="fas fa-balance-scale"></i><span class="ml-1">License</span></h2>
-    
+    <h2><i class="fas fa-balance-scale"></i><span class="ml-1">License</span></h2>    
     <p>Released under <a href="https://github.com/manid2/lone-wolf-theme/blob/master/LICENSE">MIT license</a> it is
         flexible for open source and commercial uses.</p>
+
     <h2><i class="far fa-handshake"></i><span class="ml-1">Credits</span></h2>
     <ul>
         <li><a href="https://getbootstrap.com/">Bootstrap</a></li>

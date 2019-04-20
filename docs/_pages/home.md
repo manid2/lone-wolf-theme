@@ -83,18 +83,12 @@ on the functionalities like:
 
 Easiest way to use the theme if you dont want to make changes to the theme's code.
 
-* Add `remote_theme             : "manid2/lone-wolf-theme"` to your `_config.yml` file.
+* Add `remote_theme    : "manid2/lone-wolf-theme"` to your `_config.yml` file.
 
 ### By forking the theme repository
 
 If you want to make changes to the code and to truly own the site.
 Follow the blog on smashing magazine to learn about this method [here][2].
-
-<p>
-{%- if page.show_ads -%}
-  {%- include ads.html ad_src="google-adsense" ad_type="in-article" -%}
-{%- endif -%}
-</p>
 
 ### As a ruby gem
 
@@ -103,7 +97,7 @@ of jekyll plugins.
 
 * Add `gem "lone-wolf-theme"` to your `Gemfile`.
 * Update bundled gems by using `bundle` command.
-* Add `theme                    : "lone-wolf-theme"` to your `_config.yml`.
+* Add `theme    : "lone-wolf-theme"` to your `_config.yml`.
 
 <!-- Links in the post -->
 [1]: "https://mmistakes.github.io/minimal-mistakes/"
