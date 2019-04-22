@@ -34,12 +34,6 @@ feature_rows:
     img_alt: "Apps"
 ---
 
-<p>
-{%- if page.show_ads -%}
-  {%- include ads.html ad_src="google-adsense" ad_type="in-article" -%}
-{%- endif -%}
-</p>
-
 ## Introduction
 
 **Lone Wolf Theme** is infamous for abstracting away the UI code and help us focus only on the
