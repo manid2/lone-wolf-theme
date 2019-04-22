@@ -50,9 +50,9 @@ webmaster_verifications:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google-gtag" # false (default), "google-gtag", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "UA-138748532-1"
     anonymize_ip         : # true, false (default)
 
 # Reading Files
