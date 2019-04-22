@@ -1,51 +1,41 @@
 {%- assign item = include.item -%}
 
-<a href="{{ item.url | absolute_url }}">
-        <div class="row no-gutters mb-4 border rounded">
-            {% if item.header.teaser %}
-                {% capture img_path %}
-                {{ '' | absolute_url }}/assets/images/{{ item.header.teaser }}
-                {% endcapture %}
-    
-                {% capture img_alt %}
-                {{ item.title }}
-                {% endcapture %}
-    
-            {% elsif site.teaser %}
-                {% capture img_path %}
-                {{ '' | absolute_url }}/assets/images/{{ site.teaser }}
-                {% endcapture %}
-    
-                {% capture img_alt %}
-                {{ site.title }} logo
-                {% endcapture %}
-            {% endif %}
-    
-            {% if img_path %}
-            <div class="col-sm-4 p-sm-0 text-center">
-                <img class="img-fluid" style="min-width: 60px; background-color: rgba(230, 235, 240, 0.8);"
-                    src="{{ img_path | strip }}" alt="{{ img_alt | strip }}">
-            </div>
-            {% endif %}
-            <div class="col-sm-8 pl-3">
-                <div class="row mt-1">
-                    <div class="col">
-                        <h2 class="text-dark m-0">
-                            {{ item.title | strip | strip_html | strip_newlines | truncate: 60 }}</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <span
-                            class="small font-italic text-secondary">{{ item.date | date: "%b %-d, %Y" }}</span>
-                    </div>
-                </div>
-                <div class="row d-none d-sm-block">
-                    <div class="col">
-                        <span
-                            class="text-muted">{{ item.excerpt | strip | strip_html | strip_newlines | truncate: 180 }}</span>
-                    </div>
-                </div>
-            </div>
+<a href="{{ item.url | relative_url }}" title="Go to {{ item.title }}" class="nav-link py-0">
+    <div class="row no-gutters mb-3 border rounded">
+        {% if item.header.teaser %}
+            {% capture img_path %}
+            {{ "/assets/images/"  | relative_url | append: item.header.teaser }}
+            {% endcapture %}
+
+            {% capture img_alt %}
+            {{ item.title }}
+            {% endcapture %}
+
+        {% elsif site.teaser %}
+            {% capture img_path %}
+            {{ "/assets/images/"  | relative_url | append: site.teaser }}
+            {% endcapture %}
+
+            {% capture img_alt %}
+            {{ site.title }} post teaser
+            {% endcapture %}
+        {% endif %}
+
+        {% if img_path %}
+        <div class="col-sm-4 text-center">
+            <img class="img-fluid rounded" src="{{ img_path | strip }}" alt="{{ img_alt | strip }}">
         </div>
-    </a>
+        {% endif %}
+        <div class="col-sm-8 pl-3">
+            <h3 class="my-1">
+                <span class="text-dark ">{{ item.title | strip | strip_html | strip_newlines | truncate: 60 }}</span>
+            </h3>
+            <p class="mb-1">
+                <span class="small font-italic text-secondary">{{ item.date | date: "%b %-d, %Y" }}</span>
+            </p>
+            <p class="mb-1 d-none d-sm-block">
+                <span class="text-muted">{{ item.excerpt | strip | strip_html | strip_newlines | truncate: 180 }}</span>
+            </p>
+        </div>
+    </div>
+</a>

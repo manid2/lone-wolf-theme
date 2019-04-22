@@ -26,11 +26,11 @@ layout: default
         {% for f_row in page.feature_rows %}
         <!-- TODO use animate.css to animate on hover -->
         <div class="col-md-4 p-0">
-          <a href="{{ f_row.url | absolute_url }}">
+          <a href="{{ f_row.url | relative_url }}">
             <div class="card border-success m-3">
               {% if f_row.img_path %}
               {% capture img_path %}
-              {{ '' | absolute_url }}/assets/images/{{ f_row.img_path }}
+              {{ '/assets/images/' | relative_url | append: f_row.img_path }}
               {% endcapture %}
               {% endif %}
 

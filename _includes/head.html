@@ -6,7 +6,7 @@
     {% seo %}
 
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}"
-        href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
+        href="{{ '/feed.xml' | relative_url }}">
 
     {% include head/favicon.html %}
     {% include head/styles.html %}

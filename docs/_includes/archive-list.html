@@ -26,7 +26,7 @@
     {%- else -%}    
     {% assign taxonomies = list_items %}    
     {% for taxonomy in taxonomies %}
-    {%- capture tax_0 -%} {{ taxonomy[0] | downcase | slugify }} {%- endcapture -%}
+    {%- capture tax_0 -%} {{ taxonomy[0] | slugify }} {%- endcapture -%}
     <a data-toggle="collapse" href="#posts_in_{{ tax_0 }}" role="button" aria-expanded="false"
         aria-controls="posts_in_{{ tax_0 }}">
         <h2 id="posts_in_{{ tax_0 }}_heading">{{ tax_0 }}</h2>

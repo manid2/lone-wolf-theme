@@ -10,8 +10,7 @@
                     <!-- owner info -->
                     <p class="m-0">Owned by
                         <a href="{{ owner.url }}" {% if owner.description %} title="{{ owner.description }}"
-                            {% endif %}>
-                            {{ owner.owner }}</a>.
+                            {% endif %}>{{ owner.owner }}</a>.
                     </p>
                     <p class="m-0 font-italic">{{ owner.bio }}</p>
                     <p class="m-0"><i class="fas fa-map-marker-alt"></i><span class="pl-1">{{ owner.address }}</span>
@@ -22,17 +21,18 @@
                     <ul class="list-inline">
                         <li class="list-inline-item">Social: </li>
                         {% for so_link in social.social %}
-                        <li class="list-inline-item"><a href="{{ so_link.url }}"><i class="{{ so_link.icon }}"></i>
-                                {{ so_link.label }}</a></li>
+                        <li class="list-inline-item">
+                            <a href="{{ so_link.url }}"><i class="{{ so_link.icon }}"></i>{{ so_link.label }}</a>
+                        </li>
                         {% endfor %}
                     </ul>
                     <!-- website feed links -->
                     <ul class="list-inline">
                         <li class="list-inline-item">Feed: </li>
                         {% for fd_link in feed.feed %}
-                        <li class="list-inline-item"><a href="{{ '' | absolute_url | append: fd_link.url }}"><i
-                                    class="{{ fd_link.icon }}"></i>
-                                {{ fd_link.label }}</a></li>
+                        <li class="list-inline-item">
+                            <a href="{{ fd_link.url | relative_url }}"><i class="{{ fd_link.icon }}"></i>{{ fd_link.label }}</a>
+                        </li>
                         {% endfor %}
                     </ul>
                 </div>
@@ -40,16 +40,10 @@
         </div>
     </div>
     <div class="page-footer-copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col text-center">
-                    <!-- copyright info -->
-                    <p>Copyright &copy; {{ owner.owner }}, {{ "now" | date: "%Y" }}. Website theme <a
-                            href="https://github.com/manid2/lone-wolf-theme/">LWT</a>
-                        for <a href="https://jekyllrb.com/">Jekyll</a>
-                    </p>
-                </div>
-            </div>
+        <div class="container text-center">
+            <!-- copyright info -->
+            <p>Copyright &copy; {{ owner.owner }}, {{ "now" | date: "%Y" }}. Website theme <a href="https://github.com/manid2/lone-wolf-theme/">LWT</a> for <a href="https://jekyllrb.com/">Jekyll.</a>
+            </p>
         </div>
     </div>
 </footer>

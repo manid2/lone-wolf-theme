@@ -3,22 +3,22 @@ layout: default
 ---
 
 {% if page.header.teaser %}
-{% capture img_path %}
-{{ '' | absolute_url }}/assets/images/{{ page.header.teaser }}
-{% endcapture %}
+  {% capture header_img %}
+  {{ '/assets/images/' | relative_url | append: page.header.teaser }}
+  {% endcapture %}
 
-{% capture img_alt %}
-{{ page.header.alt | default: page.title }}
-{% endcapture %}
+  {% capture h_img_alt %}
+  {{ page.header.alt | default: page.title }}
+  {% endcapture %}
 
-{% capture img_cap %}
-{{ page.header.caption | default: '' }}
-{% endcapture %}
+  {% capture img_cap %}
+  {{ page.header.caption | default: '' }}
+  {% endcapture %}
 {% endif %}
 
 {% assign blog_author = site.data.blog.authors[0] %}
 {% capture bl_au_avatar %}
-{{ '' | absolute_url }}/assets/images/{{ blog_author.avatar }}
+{{ '/assets/images/' | relative_url | append: blog_author.avatar }}
 {% endcapture %}
 
 {% capture bl_au_av_alt %}
@@ -31,8 +31,8 @@ layout: default
       {% if page.show_hero %}
       <!-- post hero -->
       <figure class="figure">
-        <img class="img-fluid shadow rounded mb-2 blog-post-hero-img" src="{{ img_path | strip }}"
-          alt="{{ img_alt | strip }}">
+        <img class="img-fluid shadow rounded mb-2 blog-post-hero-img" src="{{ header_img | strip }}"
+          alt="{{ h_img_alt | strip }}">
         <figcaption class="figure-caption text-center">{{ img_cap | strip }}</figcaption>
       </figure>
       {% endif %}
