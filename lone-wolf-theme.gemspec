@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
   spec.metadata = {
     "plugin_type"       => "theme",
     "bug_tracker_uri"   => "https://github.com/manid2/lone-wolf-theme/issues",
-    "changelog_uri"     => "https://github.com/manid2/lone-wolf-theme/CHANGELOG.md",
+    "changelog_uri"     => "https://github.com/manid2/lone-wolf-theme/blob/master/CHANGELOG.md",
     "documentation_uri" => "https://github.com/manid2/lone-wolf-theme/tree/master/docs",
     "homepage_uri"      => "https://manid2.github.io/lone-wolf-theme/",
     "source_code_uri"   => "https://github.com/manid2/lone-wolf-theme",
