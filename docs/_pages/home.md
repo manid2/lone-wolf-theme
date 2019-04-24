@@ -13,7 +13,7 @@ action_btn:
   - dropdown: true
   - dropdown_items:
     - label: "v1.0.0"
-      url: "https://github.com/manid2/lone-wolf-theme/releases/tag/v1.0.0"
+      url: "https://github.com/manid2/lone-wolf-theme/releases/tag/v1.0.2"
       fa_icon: "fas fa-arrow-down"
 
 feature_rows:
