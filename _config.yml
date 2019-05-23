@@ -10,9 +10,9 @@ remote_theme             : #"manid2/lone-wolf-theme"
 bootswatch_theme         : "united" # cerulean, spacelab, united
 
 # site Settings
-locale                   : "en-US"
+lang                     : "en_US"
 title                    : "Lone Wolf Theme"
-description              : "Simple, elegant and efficient website theme for solo freelancers."
+description              : "Simple and elegant website theme for freelance business using Bootstrap 4 with Jekyll."
 url                      : # the base hostname & protocol for your site e.g. "https://manid2.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "manid2/lone-wolf-theme"

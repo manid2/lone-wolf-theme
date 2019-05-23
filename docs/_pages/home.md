@@ -2,8 +2,8 @@
 layout: home
 permalink: /
 
-title: "LWT"
-excerpt: "Simple, elegant and efficient website theme for solo freelancers."
+title: "Lone Wolf Theme"
+excerpt: "Simple and elegant website theme for freelance business using Bootstrap 4 with Jekyll."
 action: true
 action_btn:
   - label: "Download"
@@ -36,18 +36,25 @@ feature_rows:
 
 ## Introduction
 
-**Lone Wolf Theme** is infamous for abstracting away the UI code and help us focus only on the
-<span class="badge badge-primary">content</span> and the <span class="badge badge-primary">functionalities</span>.
+Lone Wolf Theme is targeted at freelancers who run their business and wants to manage it on a Jekyll 
+generated website. It is infamous for abstracting away the frontend code using Bootstrap 4 and Bootswatch 
+themes to help us focus only on the <span class="badge badge-primary">content</span> and the 
+<span class="badge badge-primary">functions</span>. It is in the most basic version now due to my 
+hectic schedule at work and other responsibilities. Will quickly add features from my todo lists to make 
+this theme unique and great.
 
-As an embedded systems software developer I often struggle with the UI for my personal website
-which hosts my work portfolio.
+This theme is inspired by the fact that there is a lack of good boostrap based theme for Jekyll.
+Bootstrap is a popular frontend framework for websites used for keeping consistency in the code and is 
+easy to maintain and extend. Have used a freely available theme for jekyll, like [minimal mistakes][1].
+But since it is a generic theme it didn't meet my specific needs (i.e. manage my freelance business).
+And it is too difficult to make changes to their code base. Hence by using the bootstrap the frontend code is 
+abstracted away and it is very easy to extend it in the future.
 
-Have used a freely available website theme for jekyll, like [minimal mistakes][1].
-But since it is a generic theme it didn't meet my specific needs. It is too difficult to make changes
-to their code base.
+100% github pages compatible and also available in gem version from [rubygems.org][3].
+{: .lead}
 
-Hence I made a simple theme which requires minimal changes to the UI while focusing heavily
-on the functionalities like:
+List of functions the freelancers encounter in their business that this theme intends to handle by providing
+an interface to the end users:
 
 <ul class="list-group d-inline-block mb-3">
   <li class="list-group-item">
@@ -94,5 +101,6 @@ of jekyll plugins.
 * Add `theme    : "lone-wolf-theme"` to your `_config.yml`.
 
 <!-- Links in the post -->
-[1]: "https://mmistakes.github.io/minimal-mistakes/"
-[2]: "https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/"
+[1]: https://mmistakes.github.io/minimal-mistakes/
+[2]: https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/
+[3]: https://rubygems.org/gems/lone-wolf-theme
