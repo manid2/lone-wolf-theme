@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    lone-wolf-theme (1.0.3)
+    lone-wolf-theme (1.0.4)
       jekyll (~> 3.8)
       jekyll-data (~> 1.0)
       jekyll-feed (~> 0.10)
