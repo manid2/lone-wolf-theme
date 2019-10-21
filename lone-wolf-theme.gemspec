@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name                    = "lone-wolf-theme"
-  spec.version                 = "1.0.3"
+  spec.version                 = "1.0.4"
   spec.authors                 = ["Mani Kumar"]
 
   spec.summary                 = %q{Simple, elegant and efficient website theme for solo freelancers.}

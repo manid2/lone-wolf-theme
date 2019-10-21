@@ -8,9 +8,14 @@
             <div class="row">
                 <div class="col-md-4 pb-3 text-center">
                     <!-- owner info -->
-                    <p class="m-0">Owned by
+                    <p class="m-0">
+                        Owned by
+                        {% if owner.url %}
                         <a href="{{ owner.url }}" {% if owner.description %} title="{{ owner.description }}"
-                            {% endif %}>{{ owner.owner }}</a>.
+                            {% endif %}>{{ owner.owner }}</a>
+                        {% else %}
+                            <strong>{{ owner.owner }}</strong>
+                        {% endif %}
                     </p>
                     <p class="m-0 font-italic">{{ owner.bio }}</p>
                     <p class="m-0"><i class="fas fa-map-marker-alt"></i><span class="pl-1">{{ owner.address }}</span>
@@ -22,7 +27,11 @@
                         <li class="list-inline-item">Social: </li>
                         {% for so_link in social.social %}
                         <li class="list-inline-item">
+                            {% if so_link.url %}
                             <a href="{{ so_link.url }}"><i class="{{ so_link.icon }}"></i>{{ so_link.label }}</a>
+                            {% else %}
+                            <strong>{{ so_link.label }}</strong>
+                            {% endif %}
                         </li>
                         {% endfor %}
                     </ul>

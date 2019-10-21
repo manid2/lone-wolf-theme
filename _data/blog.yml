@@ -2,7 +2,7 @@
 authors:
   - name: "Blog Author"
     headline: "Awesome blogger."
-    avatar: # display_picture.jpg
+    avatar: "awesome_author.svg" # display_picture.jpg
     follow:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"

@@ -20,16 +20,16 @@ footer:
   - social:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "" # link to your github
+      url: # github link
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: ""
+      url: # linkedin profile link
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: ""
+      url: # twitter profile link
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: ""
+      url: # instagram profile link
   - feed:
     - label: "Sitemap"
       icon: "fas fa-sitemap"
