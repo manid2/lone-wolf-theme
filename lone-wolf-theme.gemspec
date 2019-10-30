@@ -2,16 +2,17 @@
 
 Gem::Specification.new do |spec|
   spec.name                    = "lone-wolf-theme"
-  spec.version                 = "1.0.4"
+  spec.version                 = "1.0.5"
   spec.authors                 = ["Mani Kumar"]
 
-  spec.summary                 = %q{Simple, elegant and efficient website theme for solo freelancers.}
+  spec.summary                 = %q{A simple bootstrap based jekyll theme.}
   spec.homepage                = "https://manid2.github.io/lone-wolf-theme/"
   spec.license                 = "MIT"
 
   spec.description = <<-EOF
-    This theme is for solo entrepreneurs aka lone wolves who strive to run a business single handedly.
-    It is for Jekyll static site generator and uses Bootstrap 4 with beautiful Bootswatch themes.
+    This theme is for jekyll static site generator.
+    It uses Bootstrap 4 with beautiful Bootswatch themes.
+    It is github-pages compatible and uses animate.css to add animations.
   EOF
 
   spec.metadata = {

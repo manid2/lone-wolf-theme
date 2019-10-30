@@ -4,8 +4,8 @@ title: "Applications"
 permalink: /apps/
 ---
 
-This page is for listing your applications or the portfolio that you worked on your personal timings.
+**List your applications.**
 
-This is also known as the side projects.
+_This is a placeholder page to list your apps or write your own story._
 
-**TODO:** Need to decide whether to make a archive-lists or use simple page.
+_This page can be anything of your choice._

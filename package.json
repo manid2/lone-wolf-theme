@@ -1,7 +1,7 @@
 {
   "name": "lone-wolf-theme",
-  "version": "1.0.4",
-  "description": "Simple, elegant and efficient website theme for solo freelancers.",
+  "version": "1.0.5",
+  "description": "A simple bootstrap based jekyll theme.",
   "repository": {
     "type": "git",
     "url": "https://github.com/manid2/lone-wolf-theme.git"
@@ -9,9 +9,8 @@
   "keywords": [
     "jekyll",
     "theme",
-    "entrepreneur",
-    "solo",
-    "freelancer"
+    "bootstrap",
+    "github-pages"
   ],
   "author": "Mani Kumar",
   "license": "MIT",
