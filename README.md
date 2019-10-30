@@ -29,8 +29,7 @@ code.
 ### By forking the theme repository
 
 If you want to make changes to the code and to truly own the site.
-Follow the blog on smashing magazine to learn about this method
-[here][sm-gh-pages].
+Follow the blog on [smashing magazine][sm-gh-pages] to learn about this method.
 
 ### As a ruby gem
 
