@@ -10,7 +10,7 @@ action_btn:
     fa_icon : "fas fa-download"
     class: "btn btn-lg btn-success"
     url: "https://github.com/manid2/lone-wolf-theme/releases/latest"
-  - dropdown: true
+  - dropdown: false
   - dropdown_items:
     - label: "v1.0.2"
       url: "https://github.com/manid2/lone-wolf-theme/releases/tag/v1.0.2"
@@ -100,7 +100,12 @@ of jekyll plugins.
 * Update bundled gems by using `bundle` command.
 * Add `theme    : "lone-wolf-theme"` to your `_config.yml`.
 
+## Contribution
+
+Use the link to learn how to [contribute][4] to LWT.
+
 <!-- Links in the post -->
 [1]: https://mmistakes.github.io/minimal-mistakes/
 [2]: https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/
 [3]: https://rubygems.org/gems/lone-wolf-theme
+[4]: {{ '/contribute/' | relative_url }}
