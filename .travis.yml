@@ -1,0 +1,19 @@
+language: ruby
+cache: bundler
+rvm:
+ - 2.5.0
+
+# TODO build and validate jekyll site too
+#install: gem install jekyll html-proofer
+#script: "bundle exec jekyll build"
+
+deploy:
+  provider: rubygems
+  api_key:
+    secure: yRBpu6aHVRMOX/HodEAHUfx2nN9FN2uWwGJRcAxSAHEwoL1lMOHpSPq5FBsFNfADpDshlIIo5y4cczRfrIan+fxVZZuuVwBE1WZDbluPGS14wt0seoiJjRLYrTOCoFhKiwJY8ZBhtIcxD1g0pWgY9IiVlG1XfWgHTwFNAwamlOCXfuKNUP7xbMeYvnkDeOXyiXdE4o9aPE7/g3fLWJMKA74I443elu6KONiKFrmDOBhJto9lmshbvkkDTLZu7fOQ/0PBxtX4WtgJmzpvsWJAN+yN7McTR6W/XjTzNxhGj1hBdwmn/hGufSE+6UOYIX/N9im3QWyTky/TGAtXT3LisTzqKIsuiL+hrZU82KEFjiWUd8SlF4LFcvqcCI6kpvNJQoYSvvT1gzFClUoX2NECxqvyiVDlLhezFjL9RH85O7ObIA73DbneaNUEbey8nep1in1n2ABSyC4S0HXwzEK4Gnqp2kj86RQheOp5u9+Boqmd5tGPz+DvXlip9Ii8QaRxoONyv5g7LOOnOMrsArP/g3xBAeMjv/arWtfamIGKQ5kCfwi+KD9t1zHmw1fnA0A5vwwJBbbjeX8JAAJ7E8P9YSj5DYAvc3JuuqXwnZmJ+TaYSalgmCwiqwxNkK9P183FrUwB+tc7qVZxNx/B9SHPF5UEaUJkToHzX8iDsiWJKeU=
+  gem:
+    master: lone-wolf-theme
+  on:
+    branch: master
+    tags: true
+    repo: manid2/lone-wolf-theme
