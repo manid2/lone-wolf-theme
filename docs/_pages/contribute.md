@@ -32,10 +32,11 @@ Permanent branches, these are protected.
 Temporary branches, for development, are deleted after merging with master
 branch.
 
-1. feature-id
-2. bugfix-id
-3. hotfix-id
-4. docfix-id
+1. feature-id - use this branch when adding, updating or removing a feature.
+2. bugfix-id - use this branch for fixing bugs.
+3. hotfix-id - use this branch to fix critical bugs.
+4. docfix-id - use this branch to update documentation.
+5. devfix-id - use this branch to update development related files.
 
 ## Tips
 
