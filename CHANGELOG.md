@@ -5,16 +5,11 @@ Refer [keepachangelog](https://keepachangelog.com/) for guidelines.
 
 ## Upcoming
 
-### Fixes v1.0.6
-
-- Setup `travis-ci` to build and deploy to [rubygems.org](https://rubygems.org/gems/lone-wolf-theme).
-- Setup coding style guidelines for easy diff, merge and collaboration.
-- Update LWT for latest gems and plugins.
-
 ### Features v1.1.0
 
 - Lightbox, Mangnific popup support for images.
 - Support for videos from youtube, vimeo, etc.
+- Upgrade dependencies.
 
 ### More vX.X.X
 
@@ -31,6 +26,13 @@ Refer [keepachangelog](https://keepachangelog.com/) for guidelines.
 - Fixes
   - Modify configurations to use `jekyll-seo-tag` gem options.
   - Use `include_cache` to improve build time.
+
+## [v1.0.6](https://github.com/manid2/lone-wolf-theme/releases/tag/v1.0.6)
+
+- Setup `travis-ci` to build and deploy to rubygems.org, #20.
+- UI improvements, fixes #22.
+- Miscellaneous improvements.
+- Added `dependencies` page in `docs/` for reference and upgrades.
 
 ## [v1.0.5](https://github.com/manid2/lone-wolf-theme/releases/tag/v1.0.5)
 
