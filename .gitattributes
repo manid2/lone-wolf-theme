@@ -1,0 +1,8 @@
+# github linguist library attributes
+assets/js/main.min.js linguist-vendored
+assets/js/bootstrap/* linguist-vendored
+
+_sass/animations/* linguist-vendored
+_sass/bootstrap/* linguist-vendored
+_sass/bootswatch/* linguist-vendored
+_sass/_bootstrap-social.scss linguist-vendored
