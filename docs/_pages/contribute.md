@@ -43,5 +43,10 @@ branch.
 - Use project boards for raw ideas and non code information.
 - Use github issues for project ideas implementation.
 
+## Dependencies
+
+Refer the list of [dependencies][2] to contribute to LWT.
+
 <!-- Links -->
 [lwt]: https://github.com/manid2/lone-wolf-theme
+[2]: {{ "/dependencies/" | relative_url }}
