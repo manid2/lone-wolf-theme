@@ -13,6 +13,12 @@ a h2, .card h2 {
     @extend .border-0;
 }
 
+ol, ul {
+  li {
+    @extend .my-2;
+  }
+}
+
 /*
  home page jumbotron background
 =============================*/
@@ -36,10 +42,10 @@ a h2, .card h2 {
 /*
  archive-posts list of blog posts
 =============================*/
-/* TODO 
+/* TODO
 .archive-list {
     &-items {
-        
+
     }
 } */
 

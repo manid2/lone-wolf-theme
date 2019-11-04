@@ -1,9 +1,12 @@
-/* 
+/*
  Syntax highlighting
  Code borrowed and modified from `minimal mistakes `.
  */
 
+// single tick quote in md, e.g. `key`
 code.highlighter-rouge {
+  background: $gray-150;
+  color: $base01;
   @extend .p-1;
 }
 
@@ -14,11 +17,12 @@ figure.highlight {
     line-height: 1.8;
     @extend .rounded;
     @extend .pr-2;
+    @extend .my-3;
 
     >pre,
     pre.highlight {
         margin: 0;
-        padding: 1em; 
+        padding: 1em;
 
         code {
           color: $base05;
