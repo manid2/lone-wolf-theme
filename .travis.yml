@@ -9,3 +9,4 @@ deploy:
   gem: lone-wolf-theme
   on:
     repo: manid2/lone-wolf-theme
+    tags: true
