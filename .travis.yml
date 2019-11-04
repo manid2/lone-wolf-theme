@@ -4,8 +4,7 @@ rvm:
 - 2.5.0
 deploy:
   provider: rubygems
-  api_key:
-    secure: WsnLzFZLDJLh7r6zXuvwuC0xEdEse+5Iwotme4FWyr/1HhNNb91YRa4+cAffAuEqY9+5SrnN5t4htxg76hVRpsqsxD3yV42r4k3AY3HKGyJLmF5K75bo1k6kPbw6deBhfztyPppumYV3sM+oDcoctiiuP7tsMcqhJXVwIs075+bNp36s2dEpvb4R1sNGMTaZCxFwoVvX95/axcmvTBIxLnv/ZiCqZe3TVDURzc+1wxCc+tzysWKgE4ooI0AYQ3wWdw+vMh8IszZckmh1+6Tj/ZyeSk/S0cxW+cJDoTSprIcsmVcgApWolHnFXUm0+7cqTn9m/UEPp57GfMofUykUmYhhXuth+Zn3QPSQfeINQghvC+hTMzkbygmIXaXN1dJd8lFzlE6+FeBOjsetKwqxITBUyyieM0FsQ4JIDaKsWhjOywq0HbLJQZQkitRQe3MIf5cR3n9mK4OgNcgssO0JUnUWHN9CKWuQzdpqZG1Qcgw09rhnBifZapDuyurnaX0wWmtGcik8kFd1Zs0V9fD6QTH+ekF248bd0YA95KL/+VcBnUKOGI9mUNYkeMtDOQguhtDWwgZPYsatpIdMqc3kP81TrCvUXTSmdzKkA0c8IXliU+wLWVhZKwPeRVvY1AivLycE0WczZOrKaBsx+G5fspiGhadsgSJLrgu+s3Wlzkg=
+  api_key: 04c753a5d36eeafc421a6bfb7873b58e
   gem: lone-wolf-theme
   on:
     repo: manid2/lone-wolf-theme
