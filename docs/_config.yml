@@ -12,12 +12,12 @@ bootswatch_theme         : "united" # cerulean, spacelab, united
 # site Settings
 lang                     : "en_US"
 title                    : "Lone Wolf Theme"
-description              : "Simple and elegant website theme for freelance business using Bootstrap 4 with Jekyll."
+description              : "A simple bootstrap based jekyll theme."
 url                      : https://manid2.github.io # the base hostname & protocol for your site
 baseurl                  : "/lone-wolf-theme" # the subpath of your site, e.g. "/blog"
 repository               : "manid2/lone-wolf-theme/docs"
 teaser                   : "post-img.jpg" # path of fallback teaser image, e.g. "teaser_default.png" in /assests/images folder
-logo                     : "lwt-logo-v1.svg" # path of logo image to display in the masthead, e.g. "site_logo.png"
+logo                     : "lwt-logo-wolf-v1.svg" # path of logo image to display in the masthead, e.g. "site_logo.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 words_per_minute         : 200
 
