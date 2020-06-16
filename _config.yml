@@ -12,7 +12,7 @@ bootswatch_theme         : "united" # cerulean, spacelab, united
 # site Settings
 lang                     : "en_US"
 title                    : "Lone Wolf Theme"
-description              : "Simple and elegant website theme for freelance business using Bootstrap 4 with Jekyll."
+description              : "A simple bootstrap based jekyll theme."
 url                      : # the base hostname & protocol for your site e.g. "https://manid2.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "manid2/lone-wolf-theme"

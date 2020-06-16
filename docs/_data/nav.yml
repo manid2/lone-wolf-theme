@@ -15,7 +15,7 @@ footer:
   - owner: "Mani Kumar"
     url: "https://manid2.github.io/"
     description: "Mani Kumar home"
-    bio: "A Software Engineer with magical skills to empower individual business persons."
+    bio: "A hobby project for jekyll."
     address: "Bangalore, KA, India."
   - social:
     - label: "GitHub"
