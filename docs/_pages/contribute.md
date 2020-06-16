@@ -27,16 +27,19 @@ LWT uses `Fork, modify and submit Pull Request` model to collaborate.
 
 Permanent branches, these are protected.
 
-1. master - latest and stable product.
+- `master` - latest and stable product.
 
-Temporary branches, for development, are deleted after merging with master
-branch.
+Allowed development branches.
 
-1. feature-id - use this branch when adding, updating or removing a feature.
-2. bugfix-id - use this branch for fixing bugs.
-3. hotfix-id - use this branch to fix critical bugs.
-4. docfix-id - use this branch to update documentation.
-5. devfix-id - use this branch to update development related files.
+- feature/id-issue_description
+- bugfix/id-issue_description
+- hotfix/id-issue_description
+- docfix/id-issue_description
+- devfix/id-issue_description
+
+Id used is the valid github issue id. It is followed by a dash and a short
+github issue title or descriptive alphanumeric string.
+Development branches are deleted after merging with master branch.
 
 ## Tips
 
