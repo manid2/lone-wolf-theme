@@ -16,8 +16,8 @@ description              : "A simple bootstrap based jekyll theme."
 url                      : # the base hostname & protocol for your site e.g. "https://manid2.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "manid2/lone-wolf-theme"
-teaser                   : #"lwt-logo-v1.svg" # path of fallback teaser image, e.g. "/assets/images/teaser_default.png"
-logo                     : "lwt-logo-v1.svg" # path of logo image to display in the masthead, e.g. "/assets/images/site_logo.png"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/teaser_default.png"
+logo                     : "lwt-logo-wolf-v1.svg" # path of logo image to display in the masthead, e.g. "/assets/images/site_logo.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 words_per_minute         : 200
 
