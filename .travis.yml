@@ -13,5 +13,5 @@ deploy:
 branches:
   # blocklist
   except:
-    - tmp/*
-    - wip/*
+    - /^(?i:tmp)/.*$/
+    - /^(?i:wip)/.*$/
