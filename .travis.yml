@@ -1,7 +1,7 @@
 language: ruby
 cache: bundler
 rvm:
-- 2.5.0
+  - 2.5.0
 deploy:
   provider: rubygems
   api_key:
@@ -10,3 +10,8 @@ deploy:
   on:
     repo: manid2/lone-wolf-theme
     tags: true
+branches:
+  # blocklist
+  except:
+    - tmp/*
+    - wip/*
