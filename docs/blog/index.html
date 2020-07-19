@@ -1,0 +1,53 @@
+---
+layout: list
+title: "Blog"
+excerpt: "List of all posts in my blog."
+# NOTE: don't set permalink, it breaks pagination
+---
+
+<!-- paginator.posts -->
+<section>
+  <ul>
+    {% for post in paginator.posts %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <p class="font-italic text-muted">
+          {{ post.date | date_to_string }} | {{ post.categories | join: ', ' }}
+        </p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<!-- paginator links -->
+<section>
+  {% if paginator.total_pages > 1 %}
+    <p>
+      <!-- paginator.prev -->
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+      {% else %}
+        <span>&laquo; Prev</span>
+      {% endif %}
+
+      <!-- paginator.pages -->
+      {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+          <em>{{ page }}</em>
+        </a>
+        {% elsif page == 1 %}
+          <a href="{{ site.paginate_path | relative_url | replace: 'page/:num/', '' }}">{{ page }}</a>
+        {% else %}
+          <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+        {% endif %}
+      {% endfor %}
+
+      <!-- paginator.next -->
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+      {% else %}
+        <span>Next &raquo;</span>
+      {% endif %}
+    </p>
+  {% endif %}
+</section>
