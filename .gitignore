@@ -23,6 +23,7 @@ Gemfile.lock
 # Node.gitignore
 node_modules/
 npm-debug.log*
+package-lock.json
 
 # Editor generated files
 .vscode
