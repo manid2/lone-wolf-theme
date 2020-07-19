@@ -2,23 +2,25 @@
 {%- assign dropdown = include.dropdown -%}
 {%- assign dropdown_items = include.dropdown_items -%}
 
-<div class="btn-group animated rubberBand delay-1s" role="group" aria-label="Button group with nested dropdown">
-    <a class="{{ action_btn.class }}" href="{{ action_btn.url }}">
-        <i class="{{ action_btn.fa_icon }}"></i>
-        <span class="pl-1">{{ action_btn.label }}</span>
-    </a>
-    {%- if dropdown -%}
+<p class="btn-group animated rubberBand delay-1s" role="group" aria-label="Button group with nested dropdown">
+  <a class="{{ action_btn.class }}" href="{{ action_btn.url }}">
+      <i class="{{ action_btn.fa_icon }}"></i>
+      <span class="pl-1">{{ action_btn.label }}</span>
+  </a>
+  {%- if dropdown -%}
     <div class="btn-group" role="group">
-        <button id="btnGroupDrop2" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false"></button>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="btnGroupDrop2">
-            {%- for item in dropdown_items -%}
+      <button id="btnGroupDrop2" type="button"
+              class="btn btn-success dropdown-toggle" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+      </button>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="btnGroupDrop2">
+          {%- for item in dropdown_items -%}
             <a class="dropdown-item" href="{{ item.url }}">
                 <i class="{{ item.fa_icon }}"></i>
                 <span class="pl-1">{{ item.label }}</span>
             </a>
-            {%- endfor -%}
-        </div>
+          {%- endfor -%}
+      </div>
     </div>
-    {%- endif -%}
-</div>
+  {%- endif -%}
+</p>
