@@ -31,7 +31,7 @@ feature_rows:
     excerpt: "TODO items."
     url: "/todo/"
     img_path: "feature_rows/pexels-breakingpic-todo.jpg"
-    img_alt: "Apps"
+    img_alt: Todo"
 ---
 
 ## Introduction

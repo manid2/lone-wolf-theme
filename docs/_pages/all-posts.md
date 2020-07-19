@@ -1,8 +1,8 @@
 ---
 layout: list
-title: "Blog"
-permalink: /blog/
-excerpt: "List of posts grouped by year."
+permalink: /all-posts/
+title: "All posts"
+excerpt: "List of posts grouped by categories."
 ---
 
 {%- include archive-list.html list_items=site.posts list_type="posts" -%}

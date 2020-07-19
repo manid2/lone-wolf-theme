@@ -1,22 +1,19 @@
 @import "../bootstrap/scss/variables";
 
+// set top and bottom margins to all headings
 h1, h2, h3, h4, h5, h6 {
-    margin: 2rem 0rem;
+    margin: 1rem 0rem;
 }
 
+// add bottom border to heading 2
 h2 {
     @extend .border-bottom;
     @extend .pb-1;
 }
 
+// remove bottom border in heading 2 when in <a> or class=".card"
 a h2, .card h2 {
     @extend .border-0;
-}
-
-ol, ul {
-  li {
-    @extend .my-2;
-  }
 }
 
 /*
@@ -58,12 +55,8 @@ ol, ul {
     }
 
     &-toc {
-        >ul {
-            @extend .pt-3;
-        }
-
         ul {
-            @extend .pl-3;
+            @extend .pl-2;
             list-style: none;
         }
     }
@@ -143,7 +136,7 @@ ol, ul {
 
         img {
             @extend .img-fluid;
-            @extend .shadow;
+            @extend .shadow-sm;
             @extend .rounded;
             @extend .my-2;
         }
@@ -157,8 +150,7 @@ ol, ul {
     }
 
     &-social-share {
-        @extend .my-5;
-        @extend .py-3;
+        @extend .my-3;
         @extend .border-top;
         @extend .border-bottom;
         @extend .border-primary;

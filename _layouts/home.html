@@ -12,12 +12,12 @@ layout: default
     <div class="container text-center">
       <h1 class="animated fadeInDownBig">{{ page.title | default: 'HOME' }}</h1>
       <p class="lead">{{ page.excerpt | default: 'Excerpt' }}</p>
-
       {%- if page.action -%}
         {%- include home-action-btn.html action_btn=action_btn dropdown=dropdown dropdown_items=dropdown_items -%}
       {%- endif -%}
     </div>
   </section>
+
   <!-- home page features -->
   <section class="home-page-features">
     <div class="container">
@@ -26,39 +26,41 @@ layout: default
         {% for f_row in page.feature_rows %}
         <!-- TODO use animate.css to animate on hover -->
         <div class="col-md-4 p-0">
-          <a href="{{ f_row.url | relative_url }}">
-            <div class="card border-success m-3">
-              {% if f_row.img_path %}
+          <div class="card border-0 m-3">
+            {% if f_row.img_path %}
               {% capture img_path %}
               {{ '/assets/images/' | relative_url | append: f_row.img_path }}
               {% endcapture %}
-              {% endif %}
+            {% endif %}
 
-              {% if f_row.img_alt %}
+            {% if f_row.img_alt %}
               {% capture img_alt %}
               {{ f_row.img_alt | default: 'Feature image' }}
               {% endcapture %}
-              {% endif %}
+            {% endif %}
 
-              <div class="card-header">
-                <h2 class="m-0">{{ f_row.title | strip | strip_html | strip_newlines | truncate: 10 }}</h2>
-              </div>
-
+            <div class="shadow-sm rounded-top">
               {% if img_path %}
-              <img class="img-fluid" src="{{ img_path | strip }}" alt="{{ img_alt | strip }}">
+                <img class="img-fluid rounded-top" src="{{ img_path | strip }}" alt="{{ img_alt | strip }}">
               {% endif %}
-
-              <div class="card-body">
-                <p class="card-text">{{ f_row.excerpt | strip | strip_html | strip_newlines | truncate: 200 }}</p>
-              </div>
             </div>
-          </a>
+
+            <div class="card-body bg-light border border-light border-top-0 rounded-bottom">
+              <a href="{{ f_row.url | relative_url }}">
+                <h2 class="m-0">
+                  {{ f_row.title | strip | strip_html | strip_newlines | truncate: 10 }}
+                </h2>
+              </a>
+              <p class="card-text">{{ f_row.excerpt | strip | strip_html | strip_newlines | truncate: 200 }}</p>
+            </div>
+          </div>
         </div>
         {% endfor %}
       </div>
       {% endif%}
     </div>
   </section>
+
   <!-- home page article -->
   <section class="home-page-article">
     <div class="container">
