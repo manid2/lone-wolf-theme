@@ -18,6 +18,13 @@ It uses
 - [Lone wolf theme docs][1]
 - [Me, manid2][2]
 
+## Screenshots
+
+![Lone wolf theme screenshot][lwt_ss_all_img]
+
+<!-- Images -->
+[lwt_ss_all_img]: lwt_screenshots/lwt_ss_all_in_one.png "Lone wolf theme screenshot"
+
 ## Installation
 
 ### Using remote theme
