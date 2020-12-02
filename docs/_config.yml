@@ -3,57 +3,58 @@
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# 'bundle exec jekyll serve'. If you change this file, please restart the
+# server process.
 
-theme                    : #"lone-wolf-theme"
-remote_theme             : "manid2/lone-wolf-theme"
-bootswatch_theme         : "united" # cerulean, spacelab, united
+theme: #"lone-wolf-theme"
+remote_theme: "manid2/lone-wolf-theme"
+bootswatch_theme: "united" # cerulean, spacelab, united
 
 # site Settings
-lang                     : "en_US"
-title                    : "Lone Wolf Theme"
-description              : "A simple bootstrap based jekyll theme."
-url                      : https://manid2.github.io # the base hostname & protocol for your site
-baseurl                  : "/lone-wolf-theme" # the subpath of your site, e.g. "/blog"
-repository               : "manid2/lone-wolf-theme/docs"
-teaser                   : "post-img.jpg" # path of fallback teaser image, e.g. "teaser_default.png" in /assests/images folder
-logo                     : "lwt-logo-wolf-v1.svg" # path of logo image to display in the masthead, e.g. "site_logo.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-words_per_minute         : 200
+lang: "en_US"
+title: "Lone Wolf Theme"
+description: "A simple bootstrap based jekyll theme."
+url: https://manid2.github.io
+baseurl: "/lone-wolf-theme"
+repository: "manid2/lone-wolf-theme/docs"
+teaser: "post-img.jpg"
+logo: "lwt-logo-wolf-v1.svg"
+masthead_title: # overrides the website title displayed in the masthead
+words_per_minute: 200
 
 # comments settings
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2", "utterances", "custom"
+  provider: false
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname:
 
 # feed
 atom_feed:
-  path                   : # blank (default) uses feed.xml
+  path: # blank (default) uses feed.xml
 
 # site search settings
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
-search_provider          : # google
+search: # true, false (default)
+search_full_content: # true, false (default)
+search_provider: # google
 
 google:
-  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
-  instant_search         : # false (default), true
+  search_engine_id: # YOUR_SEARCH_ENGINE_ID
+  instant_search: # false (default), true
 
 # site verifications, jekyll-seo-tag plugin
 webmaster_verifications:
-  google:  # 1234
-  bing:    # 1234
-  alexa:   # 1234
-  yandex:  # 1234
-  baidu:   # 1234
+  google: # 1234
+  bing: # 1234
+  alexa: # 1234
+  yandex: # 1234
+  baidu: # 1234
 
 # Analytics
 analytics:
-  provider               : "google-gtag" # false (default), "google-gtag", "custom"
+  provider: "google-gtag" # false (default), "google-gtag", "custom"
   google:
-    tracking_id          : "UA-138748532-1"
-    anonymize_ip         : # true, false (default)
+    tracking_id: "UA-138748532-1"
+    anonymize_ip: # true, false (default)
 
 # Reading Files
 include:
@@ -110,9 +111,10 @@ kramdown:
   enable_coderay: false
 
 # Sass/SCSS
+# http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 sass:
   sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  style: compressed
 
 # Outputting
 permalink: /:categories/:title/
