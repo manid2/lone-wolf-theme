@@ -42,7 +42,7 @@ google:
   search_engine_id: # YOUR_SEARCH_ENGINE_ID
   instant_search: # false (default), true
 
-# site verifications, jekyll-seo-tag plugin
+# site verifications, for seo
 webmaster_verifications:
   google: # 1234
   bing: # 1234
@@ -129,7 +129,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jekyll-seo-tag
   - jemoji
   - jekyll-include-cache
 
@@ -139,7 +138,6 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jekyll-seo-tag
   - jemoji
   - jekyll-include-cache
 
