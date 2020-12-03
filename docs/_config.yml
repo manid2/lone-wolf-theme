@@ -17,8 +17,10 @@ description: "A simple bootstrap based jekyll theme."
 url: https://manid2.github.io
 baseurl: "/lone-wolf-theme"
 repository: "manid2/lone-wolf-theme/docs"
-teaser: "post-img.jpg"
+teaser: "lwt-logo-wolf-v2.svg"
 logo: "lwt-logo-wolf-v2.svg"
+og_image: "lwt-logo-wolf-v2.svg"
+
 masthead_title: # overrides the website title displayed in the masthead
 words_per_minute: 200
 
