@@ -23,7 +23,7 @@
   {%- assign seo_description = seo_description | markdownify | strip_html | newline_to_br | strip_newlines | replace: '<br />', ' ' | escape_once | strip -%}
 {%- endif -%}
 
-{%- assign author = page.author | default: site.author | default site.data.blog.authors[0] -%}
+{%- assign author = site.data.blog.authors[0] -%}
 
 {%- if author.twitter -%}
   {%- assign author_twitter = author.twitter -%}
@@ -43,10 +43,12 @@
   {%- assign og_type = "website" -%}
 {%- endif -%}
 
+{%- assign seo_wv = site.webmaster_verifications -%}
+
 <!-- begin _includes/seo.html -->
   <title>{{ seo_title | default: site.title }}</title>
   <meta name="description" content="{{ seo_description }}">
-  {% if author.name %}
+  {% if author %}
   <meta name="author" content="{{ author.name | default: author }}">
     {% if og_type == "article" %}
       <meta property="article:author" content="{{ author.name | default: author }}">
@@ -63,8 +65,8 @@
   <meta property="og:description" content="{{ seo_description }}">
 {% endif %}
 
-{% if page_teaser_image %}
-  <meta property="og:image" content="{{ page_teaser_image }}">
+{% if seo_og_image %}
+  <meta property="og:image" content="{{ seo_og_image }}">
 {% endif %}
 
 {% if author_twitter %}
@@ -76,8 +78,8 @@
   <meta name="twitter:url" content="{{ canonical_url }}">
   <meta name="twitter:card" content="{{ author_twitter.card }}">
 
-  {% if page_teaser_image %}
-    <meta name="twitter:image" content="{{ page_teaser_image }}">
+  {% if seo_og_image %}
+    <meta name="twitter:image" content="{{ seo_og_image }}">
   {% endif %}
 
   <meta name="twitter:creator" content="{{ author_twitter.creator }}">
@@ -110,23 +112,23 @@
   <link rel="next" href="{{ paginator.next_page_path | absolute_url }}">
 {% endif %}
 
-{% if webmaster_verifications.google %}
-  <meta name="google-site-verification" content="{{ webmaster_verifications.google }}" />
+{% if seo_wv.google %}
+  <meta name="google-site-verification" content="{{ seo_wv.google }}" />
 {% endif %}
-{% if webmaster_verifications.bing %}
-  <meta name="msvalidate.01" content="{{ webmaster_verifications.bing }}">
+{% if seo_wv.bing %}
+  <meta name="msvalidate.01" content="{{ seo_wv.bing }}">
 {% endif %}
-{% if webmaster_verifications.alexa %}
-  <meta name="alexaVerifyID" content="{{ webmaster_verifications.alexa }}">
+{% if seo_wv.alexa %}
+  <meta name="alexaVerifyID" content="{{ seo_wv.alexa }}">
 {% endif %}
-{% if webmaster_verifications.yandex %}
-  <meta name="yandex-verification" content="{{ webmaster_verifications.yandex }}">
+{% if seo_wv.yandex %}
+  <meta name="yandex-verification" content="{{ seo_wv.yandex }}">
 {% endif %}
-{% if webmaster_verifications.baidu %}
-  <meta name="baidu-site-verification" content="{{ site.naver_site_verification }}">
+{% if seo_wv.baidu %}
+  <meta name="baidu-site-verification" content="{{ seo_wv.baidu }}">
 {% endif %}
-{% if webmaster_verifications.naver %}
-  <meta name="naver-site-verification" content="{{ site.naver_site_verification }}">
+{% if seo_wv.naver %}
+  <meta name="naver-site-verification" content="{{ seo_wv.naver }}">
 {% endif %}
 
 <script type="application/ld+json">
@@ -134,13 +136,11 @@
     "@context": "https://schema.org",
     "@type": "WebSite",
     "publisher": {
-      "@type": "Organization"
-      {% if seo_og_image %},
+      "@type": "Organization"{% if seo_og_image %},
       "logo": {
         "@type": "ImageObject",
         "url": {{ seo_og_image }}
-      }
-      {% endif %}
+      }{% endif %}
     },
     "description": {{ seo_description }},
     "url": {{ '/' | absolute_url | jsonify }}
