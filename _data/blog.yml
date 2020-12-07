@@ -10,6 +10,13 @@ authors:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: # link
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter"
+      url: # link
+    # twitter card info for seo
+    twitter:
+      creator: "@mani_d2"
+      card: "summary"
 
 # blog post share links
 share:

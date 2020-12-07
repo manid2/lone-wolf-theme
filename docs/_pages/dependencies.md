@@ -13,7 +13,6 @@ List of dependencies for reference and upgrades.
 - "jekyll-sitemap", "~> 1.2"
 - "jekyll-gist", "~> 1.5"
 - "jekyll-feed", "~> 0.10"
-- "jekyll-seo-tag", "~> 2.5"
 - "jekyll-data", "~> 1.0"
 - "jemoji", "~> 0.10"
 - "jekyll-include-cache", "~> 0.1"
