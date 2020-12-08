@@ -19,7 +19,6 @@ baseurl: "" # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "manid2/lone-wolf-theme"
 teaser: "lwt-logo-wolf-v2.png" # default teaser image for blog posts
 logo: "lwt-logo-wolf-v2.png" # logo image to be ujsed in masthead
-og_image: "lwt-logo-wolf-v2.png" # for seo, social share image
 masthead_title: # overrides the website title displayed in the masthead
 words_per_minute: 200 # TODO: TBD
 
