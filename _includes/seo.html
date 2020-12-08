@@ -30,12 +30,9 @@
 {%- endif -%}
 
 {%- assign seo_og_image = page.header.teaser | default: site.teaser -%}
-{%- if page.og_image -%}
-  {%- assign seo_og_image = page.og_image | default: seo_og_image -%}
-{%- elsif site.og_image -%}
-  {%- assign seo_og_image = site.og_image | default: seo_og_image -%}
+{%- if seo_og_image -%}
+  {%- assign seo_og_image = '/assets/images/' | absolute_url | append: seo_og_image | escape -%}
 {%- endif -%}
-{%- assign seo_og_image = '/assets/images/' | absolute_url | append: seo_og_image | escape -%}
 
 {%- if page.date -%}
   {%- assign og_type = "article" -%}

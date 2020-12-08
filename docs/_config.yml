@@ -19,7 +19,6 @@ baseurl: "/lone-wolf-theme"
 repository: "manid2/lone-wolf-theme/docs"
 teaser: "lwt-logo-wolf-v2.png"
 logo: "lwt-logo-wolf-v2.png"
-og_image: "lwt-logo-wolf-v2.png"
 
 masthead_title: # overrides the website title displayed in the masthead
 words_per_minute: 200
