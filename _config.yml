@@ -17,8 +17,8 @@ description: "A simple bootstrap based jekyll theme."
 url: # site url e.g. "https://manid2.github.io"
 baseurl: "" # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "manid2/lone-wolf-theme"
-teaser: "lwt-logo-wolf-v2.png" # default teaser image for blog posts
-logo: "lwt-logo-wolf-v2.png" # logo image to be ujsed in masthead
+teaser: # default teaser image for blog posts
+logo: "lwt-logo-wolf-v2.svg" # logo image to be ujsed in masthead
 masthead_title: # overrides the website title displayed in the masthead
 words_per_minute: 200 # TODO: TBD
 
@@ -42,7 +42,7 @@ google:
   search_engine_id: # YOUR_SEARCH_ENGINE_ID
   instant_search: # false (default), true
 
-# site verifications, for seo
+# site verifications, jekyll-seo-tag plugin
 webmaster_verifications:
   google: # 1234
   bing: # 1234
@@ -129,6 +129,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jekyll-seo-tag
   - jemoji
   - jekyll-include-cache
 
@@ -138,6 +139,7 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jekyll-seo-tag
   - jemoji
   - jekyll-include-cache
 

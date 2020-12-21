@@ -1,13 +1,13 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {% include seo.html %}
+    {% seo %}
 
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}"
-    href="{{ '/feed.xml' | relative_url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}"
+        href="{{ '/feed.xml' | relative_url }}">
 
-  {% include head/favicon.html %}
-  {% include head/styles.html %}
+    {% include head/favicon.html %}
+    {% include head/styles.html %}
 </head>
