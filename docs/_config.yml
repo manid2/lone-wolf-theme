@@ -17,9 +17,8 @@ description: "A simple bootstrap based jekyll theme."
 url: https://manid2.github.io
 baseurl: "/lone-wolf-theme"
 repository: "manid2/lone-wolf-theme/docs"
-teaser: "lwt-logo-wolf-v2.png"
-logo: "lwt-logo-wolf-v2.png"
-
+teaser: "post-img.jpg"
+logo: "lwt-logo-wolf-v2.svg"
 masthead_title: # overrides the website title displayed in the masthead
 words_per_minute: 200
 
@@ -42,7 +41,7 @@ google:
   search_engine_id: # YOUR_SEARCH_ENGINE_ID
   instant_search: # false (default), true
 
-# site verifications, for seo
+# site verifications, jekyll-seo-tag plugin
 webmaster_verifications:
   google: # 1234
   bing: # 1234
@@ -129,6 +128,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jekyll-seo-tag
   - jemoji
   - jekyll-include-cache
   - jekyll-remote-theme
@@ -139,6 +139,7 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jekyll-seo-tag
   - jemoji
   - jekyll-include-cache
   - jekyll-remote-theme
