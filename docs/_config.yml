@@ -18,7 +18,7 @@ url: https://manid2.github.io
 baseurl: "/lone-wolf-theme"
 repository: "manid2/lone-wolf-theme/docs"
 teaser: "post-img.jpg"
-logo: "lwt-logo-wolf-v2.svg"
+logo: "lwt-logo-wolf-v2.png" # PNG is SEO friendly
 masthead_title: # overrides the website title displayed in the masthead
 words_per_minute: 200
 
