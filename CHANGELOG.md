@@ -5,27 +5,33 @@ Refer [keepachangelog](https://keepachangelog.com/) for guidelines.
 
 ## Upcoming
 
-### Features v1.1.0
+* Words per minute to indicate time required to read a blog post.
+* Related posts at the bottom of blog post.
+* Show/Hide comments on button click.
+* Use custom links or ads in right sidebar.\
+  Keep same width for blog posts.\
+  Smaller width is easy and requires only vertical scrolling.
+* Page read progress indicator.
+* Go to top button.
 
-- Lightbox, Mangnific popup support for images.
-- Support for videos from youtube, vimeo, etc.
-- Upgrade dependencies.
+Not implemented in any particular order, depends on feasibility and\
+proof-of-concept (POC).
 
-### More vX.X.X
+## [v1.1.1](https://github.com/manid2/lone-wolf-theme/releases/tag/v1.1.1)
 
-- Blog post citation text and options
-- Collapse h2 tags in blog posts for md and sm devices.
-- Site Search function.
-- Slide show and carousel support.
-- Color thief for decoration.
-- Section numbers in toc.
-- Blog read progress bar.
-- Back to top button.
-- Option to download blog posts and collections in `PDF`.
-- Automatic blog post summary generation.
-- Fixes
-  - Modify configurations to use `jekyll-seo-tag` gem options.
-  - Use `include_cache` to improve build time.
+* Enhance icons and logo to make it more visible and recognizable.
+* Updated CHANGELOG.md
+
+## [v1.1.0](https://github.com/manid2/lone-wolf-theme/releases/tag/v1.1.0)
+
+* Add js development doc
+* Update theme version
+* Remove package-lock json, add to gitignore
+* Add local dev test steps
+* Add pagination to blog list page
+* Enhance post layout, shadows n minor ui fixes
+* Enhance home page layout
+* Change bs4 rows to ul
 
 ## [v1.0.6](https://github.com/manid2/lone-wolf-theme/releases/tag/v1.0.6)
 
