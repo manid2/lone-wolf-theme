@@ -179,3 +179,10 @@ defaults:
     values:
       layout: page
       show_ads: true
+  # any page
+  - scope:
+      path: ""
+    values:
+      # for SEO and social sharing
+      image: assets/images/lwt-logo-wolf-v2.png
+      image_alt: Lone Wolf Theme logo version 2
