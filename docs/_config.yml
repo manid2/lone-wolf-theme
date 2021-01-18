@@ -6,21 +6,36 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the
 # server process.
 
+# theme settings
 theme: #"lone-wolf-theme"
 remote_theme: "manid2/lone-wolf-theme"
 bootswatch_theme: "united" # cerulean, spacelab, united
 
-# site Settings
+# site settings, follows the order used in jekyll-seo-tag plugin
 lang: "en_US"
 title: "Lone Wolf Theme"
 description: "A simple bootstrap based jekyll theme."
 url: https://manid2.github.io
 baseurl: "/lone-wolf-theme"
-repository: "manid2/lone-wolf-theme/docs"
-teaser: "post-img.jpg"
-logo: "lwt-logo-wolf-v2.png" # PNG is SEO friendly
-masthead_title: # overrides the website title displayed in the masthead
-words_per_minute: 200
+author: mani_d2
+twitter:
+  username: mani_d2 # should be site's username
+  card: summary
+logo: assets/images/lwt-logo-wolf-v2.png # PNG is SEO friendly
+# use below when there are social links for site
+#social:
+#  name: Mani Kumar
+#  links:
+#    - https://twitter.com/mani_d2
+#    - https://www.linkedin.com/in/manid2/
+#    - https://github.com/manid2
+# site verifications,
+webmaster_verifications:
+  google: # 1234
+  bing: # 1234
+  alexa: # 1234
+  yandex: # 1234
+  baidu: # 1234
 
 # comments settings
 comments:
@@ -40,14 +55,6 @@ search_provider: # google
 google:
   search_engine_id: # YOUR_SEARCH_ENGINE_ID
   instant_search: # false (default), true
-
-# site verifications, jekyll-seo-tag plugin
-webmaster_verifications:
-  google: # 1234
-  bing: # 1234
-  alexa: # 1234
-  yandex: # 1234
-  baidu: # 1234
 
 # Analytics
 analytics:

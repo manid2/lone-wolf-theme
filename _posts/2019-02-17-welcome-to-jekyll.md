@@ -5,10 +5,9 @@ excerpt: "Welcome message post to show jekyll content."
 date:   2019-02-17 14:30:34 +0530
 categories: tutorials
 
-header:
-  teaser: coding-langs.jpg
-  alt: sample post 1
-  caption: testing post caption
+image: assets/images/coding-langs.jpg
+image_alt: sample post 1
+image_caption: testing post caption
 
 permalink: /welcome/
 ---

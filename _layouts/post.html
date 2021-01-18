@@ -2,17 +2,17 @@
 layout: default
 ---
 
-{% if page.header.teaser %}
-  {% capture header_img %}
-  {{ '/assets/images/' | relative_url | append: page.header.teaser }}
+{% if page.image %}
+  {% capture page_image %}
+    {{ page.image | relative_url | default: '' }}
   {% endcapture %}
 
-  {% capture h_img_alt %}
-  {{ page.header.alt | default: page.title }}
+  {% capture page_image_alt %}
+    {{ page.image_alt | default: 'page image default alt' }}
   {% endcapture %}
 
-  {% capture img_cap %}
-  {{ page.header.caption | default: '' }}
+  {% capture page_image_caption %}
+    {{ page.image_caption | default: '' }}
   {% endcapture %}
 {% endif %}
 
@@ -28,12 +28,12 @@ layout: default
 <section class="container mt-3 blog-post">
   <div class="row">
     <div class="col-md-8 pb-3">
-      {% if page.show_hero %}
+      {% if page.show_hero and page_image %}
       <!-- post hero -->
       <figure class="figure">
-        <img class="img-fluid shadow-sm rounded mb-2 blog-post-hero-img" src="{{ header_img | strip }}"
-          alt="{{ h_img_alt | strip }}">
-        <figcaption class="figure-caption text-center">{{ img_cap | strip }}</figcaption>
+        <img class="img-fluid shadow-sm rounded mb-2 blog-post-hero-img" src="{{ page_image | strip }}"
+          alt="{{ page_image_alt | strip }}">
+        <figcaption class="figure-caption text-center">{{ page_image_caption | strip }}</figcaption>
       </figure>
       {% endif %}
       <!-- post title -->
