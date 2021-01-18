@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name                    = "lone-wolf-theme"
-  spec.version                 = "1.1.1"
+  spec.version                 = "1.2.0"
   spec.authors                 = ["Mani Kumar"]
 
   spec.summary                 = %q{A simple bootstrap based jekyll theme.}

@@ -17,6 +17,14 @@ Refer [keepachangelog](https://keepachangelog.com/) for guidelines.
 Not implemented in any particular order, depends on feasibility and\
 proof-of-concept (POC).
 
+## [v1.2.0](https://github.com/manid2/lone-wolf-theme/releases/tag/v1.2.0)
+
+Optimized for SEO with `jekyll-seo-tag` properties, refactored code to:
+
+* Add site logo to any page (default site logo) for SEO and social share
+* Align theme config properties to jekyll-seo-tag plugin properties for\
+  better SEO results.
+
 ## [v1.1.1](https://github.com/manid2/lone-wolf-theme/releases/tag/v1.1.1)
 
 * Enhance icons and logo to make it more visible and recognizable.
