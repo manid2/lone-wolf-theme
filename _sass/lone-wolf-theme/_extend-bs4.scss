@@ -16,6 +16,27 @@ a h2, .card h2 {
     @extend .border-0;
 }
 
+// stylize blockquote
+blockquote {
+  @extend .blockquote;
+  @extend .p-2;
+  background-color: $gray-100;
+  border-left: 0.25rem solid $primary;
+
+  p {
+    @extend .mb-0;
+    @extend .font-italic;
+  }
+
+  footer {
+    @extend .blockquote-footer;
+  }
+
+  cite {
+    @extend .font-italic;
+  }
+}
+
 /*
  home page jumbotron background
 =============================*/

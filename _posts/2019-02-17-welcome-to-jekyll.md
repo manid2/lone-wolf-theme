@@ -32,9 +32,23 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
 
-#### More Code?
+## Blockquote
 
-I think no.
+### Simple blockquote
+
+>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat
+> a ante.
+
+*Someone famous in Source Title*
+
+### Blockquote with citation
+
+NOTE: Markdown has no support for citation, hence use html.
+
+<blockquote class="blockquote">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
 
 ## What else?
 
