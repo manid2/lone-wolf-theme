@@ -57,7 +57,7 @@ Use the link to learn how to [contribute][3] to LWT.
 If you like this theme and want to support its development please consider
 sponsoring.
 
-<a href="https://buymeacoffee.com/manid2" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-yellow.png" alt="Buy Me A Coffee" height="42" width="174"></a
+<a href="https://buymeacoffee.com/manid2" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-yellow.png" alt="Buy Me A Coffee" height="42" width="174"></a>
 
 <!-- Links in the post -->
 [jekyll]: https://jekyllrb.com/
