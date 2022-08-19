@@ -13,11 +13,11 @@ bootswatch_theme: "united" # cerulean, spacelab, united
 
 # site settings, follows the order used in jekyll-seo-tag plugin
 lang: "en_US"
-title: "Lone Wolf Theme"
-description: "A simple bootstrap based jekyll theme."
-url: # site url e.g. "https://manid2.github.io"
+title: "Mise aux poings Boxing Club"
+description: "La boxe pour tous dans le Lauragais."
+url: "https://albator2000.github.io"
 baseurl: "" # the subpath of your site, e.g. "/blog"
-author: mani_d2
+author: Mathieu Raimondi
 twitter:
   username: mani_d2 # should be site's username
   card: summary
@@ -176,5 +176,5 @@ defaults:
       path: ""
     values:
       # for SEO and social sharing
-      image: assets/images/lwt-logo-wolf-v2.png
-      image_alt: Lone Wolf Theme logo version 2
+      image: assets/images/logo.png
+      image_alt: Mise aux poings
