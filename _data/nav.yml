@@ -1,14 +1,14 @@
 # header links
 header:
-  - title: "Features"
-    url: "/features/"
-    description: "List of features in the theme"
-  - title: "Source"
-    url: "/source/"
-    description: "Theme source code"
-  - title: "About"
-    url: "/about/"
-    description: "A little story about the theme"
+  - title: "Lieux / Horaires"
+    url: "/Lieux/"
+    description: "Lieux et Horaires des cours"
+  - title: "Tarifs"
+    url: "/Tarifs/"
+    description: "Tarifs"
+  - title: "L'équipe"
+    url: "/Lequipe/"
+    description: "Présentation de l'équipe"
 
 # footer links
 footer:
