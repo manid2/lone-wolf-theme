@@ -7,8 +7,8 @@
 # server process.
 
 # theme settings
-theme: "lone-wolf-theme"
-remote_theme: # "manid2/lone-wolf-theme"
+#theme: "lone-wolf-theme"
+#remote_theme: # "manid2/lone-wolf-theme"
 bootswatch_theme: "united" # cerulean, spacelab, united
 
 # site settings, follows the order used in jekyll-seo-tag plugin
