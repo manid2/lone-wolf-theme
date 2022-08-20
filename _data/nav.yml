@@ -18,22 +18,22 @@ footer:
     bio: "I am awesome" # short bio
     address: # location
   - social:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: # github link
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: # linkedin profile link
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: # twitter profile link
+#    - label: "GitHub"
+#      icon: "fab fa-fw fa-github"
+#      url: # github link
+#    - label: "LinkedIn"
+#      icon: "fab fa-fw fa-linkedin"
+#      url: # linkedin profile link
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook"
+      url: https://www.facebook.com/miseauxpoings
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: # instagram profile link
-  - feed:
-    - label: "Sitemap"
-      icon: "fas fa-sitemap"
-      url: "/sitemap.xml"
-    - label: "RSS"
-      icon: "fas fa-fw fa-rss-square"
-      url: "/feed.xml"
+      url: https://www.instagram.com/mise_aux_poings/?hl=fr
+#  - feed:
+#    - label: "Sitemap"
+#      icon: "fas fa-sitemap"
+#      url: "/sitemap.xml"
+#    - label: "RSS"
+#      icon: "fas fa-fw fa-rss-square"
+#      url: "/feed.xml"
