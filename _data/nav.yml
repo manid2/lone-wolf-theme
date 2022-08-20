@@ -9,6 +9,9 @@ header:
   - title: "L'équipe"
     url: "/Lequipe/"
     description: "Présentation de l'équipe"
+  - title: "Team Building"
+    url: "/Teambuilding/"
+    description: "Venez pratiquer la boxe entre collègues"
 
 # footer links
 footer:
