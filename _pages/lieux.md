@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Lieux des cours"
-permalink: /lieux/
+permalink: /Lieux/
 ---
 
 Le club propose ses cours sur 2 communes du Lauragais.
