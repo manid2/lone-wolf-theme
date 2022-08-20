@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "L'Equipe"
-permalink: /lequipe/
+permalink: /Lequipe/
 ---
 
 ## Les membres fondateurs
