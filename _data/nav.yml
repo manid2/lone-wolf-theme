@@ -12,11 +12,11 @@ header:
 
 # footer links
 footer:
-  - owner: "Your Name"
+  - owner: "Association Mise aux Poings Boxing Club"
     url: # link if any
     description: # tool tip for your url
-    bio: "I am awesome" # short bio
-    address: # location
+    bio: "Boxe pour tous" # short bio
+    address: 10 avenue des crêtes, 31320 Ramonville Saint Agne
   - social:
 #    - label: "GitHub"
 #      icon: "fab fa-fw fa-github"
