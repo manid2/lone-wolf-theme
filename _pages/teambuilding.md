@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /teambuilding/
+permalink: /Teambuilding/
 title: "Team Building"
 ---
 
