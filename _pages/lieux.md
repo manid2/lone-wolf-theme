@@ -20,4 +20,6 @@ Des cours adultes tous les jours de la semaine de 19 heures à 20 heures 30, et 
 
 Des cours enfants tous les mercredi de 15 heures à 16 heures ou de 16 heures à 17 heures, en fonction du niveau.
 
-![Toto](/assets/images/Horaires2022.png)
+<img style="margin:0 auto; width : 100%;" src="/assets/images/Planning_2022.png">
+
+<!---![Toto](/assets/images/Planning_2022.png)--->
