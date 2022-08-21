@@ -8,17 +8,17 @@ Le club propose ses cours sur 2 communes du Lauragais.
 
 ## A Deyme
 
-Des cours adultes de 21 heures à 22 heures 15 tous les lundi soirs. Rendez-vous à la **salle des fêtes**.
+Des cours adultes de 21h à 22h15 tous les lundis soirs. Rendez-vous à la **salle des fêtes**.
 
-Des cours enfants de 17 à 18 heures tous les mercredi. Rendez-vous au **Dojo**
+Des cours enfants de 17h à 18h tous les jeudis. Rendez-vous au **Dojo**
 
 ## A Ramonville
 
 Une seule adresse - le 10 avenue des crêtes à Ramonville-Saint-Agne (Crossfit Rive Droite).
 
-Des cours adultes tous les jours de la semaine de 19 heures à 20 heures 30, et plus encore! 
+Des cours adultes tous les jours de la semaine de 19h à 20 heures 30, et plus encore! 
 
-Des cours enfants tous les mercredi de 15 heures à 16 heures ou de 16 heures à 17 heures, en fonction du niveau.
+Des cours enfants tous les mercredi de 15h à 16h ou de 16h à 17h, en fonction du niveau.
 
 <img style="margin:0 auto; width : 100%;" src="/assets/images/Planning_2022.png">
 
