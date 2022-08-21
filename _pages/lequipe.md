@@ -6,7 +6,7 @@ permalink: /Lequipe/
 
 ## Les membres fondateurs
 
-En 2019, Alice et Jean-Philippe Castaing, Nicolas et Ratchana Simonet, et Mathieu Raimondi, 5 amis de longue date fondèrent "Mise aux poings". Ils s'étaient rencontrés sur les tatamis il y a plus de 15 ans, et vous propose aujourd'hui de les accompagner pour développer leur passion des arts martiaux et de la boxe.
+En 2019, Alice et Jean-Philippe Castaing, Nicolas et Ratchana Simonet, et Mathieu Raimondi, 5 amis de longue date fondèrent "Mise aux poings". Ils s'étaient rencontrés sur les tatamis il y a plus de 15 ans, et vous proposent aujourd'hui de vous accompagner pour développer leur passion des arts martiaux et de la boxe.
 
 ## Le Bureau
 
