@@ -18,4 +18,6 @@ Attention - L'ASCD demande une cotisation supplémentaire de 10 euros. A verser 
 
 Tous les tarifs dans le tableau récapitulatif ci-dessous.
 
-![Toto1](/assets/images/tarifs_2022.png)
+<img style="margin:0 auto; width : 100%;" src="/assets/images/Tarifs_2022.png">
+
+<!---![Toto1](/assets/images/tarifs_2022.png)--->
