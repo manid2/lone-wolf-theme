@@ -8,7 +8,7 @@ Le club propose ses cours sur 2 communes du Lauragais.
 
 ## A Deyme
 
-Des cours adultes de 21h à 22h15 tous les lundis soir. Rendez-vous à la **salle des fêtes**.
+Des cours adultes de 18h45h à 20h15 tous les mercredis soir. Rendez-vous à la **salle des fêtes**.
 
 Des cours enfants de 17h à 18h tous les jeudis. Rendez-vous au **Dojo**
 
