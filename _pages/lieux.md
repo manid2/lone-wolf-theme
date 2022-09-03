@@ -10,7 +10,7 @@ Le club propose ses cours sur 2 communes du Lauragais.
 
 Des cours adultes de 18h45h à 20h15 tous les mercredis soir. Rendez-vous à la **salle des fêtes**.
 
-Des cours enfants de 17h à 18h tous les jeudis. Rendez-vous au **Dojo**
+Des cours enfants de 16h45 à 17h45 tous les jeudis. Rendez-vous au **Dojo**
 
 ## A Ramonville
 
