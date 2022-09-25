@@ -8,11 +8,13 @@ Le club propose ses cours sur 2 communes du Lauragais.
 
 ## A Deyme
 
-Tarif unique enfants & adultes - 160 euros de cotisation annuelle.
+## A Deyme
 
-Compter 35 euros de licence en plus pour un adulte, et 25 euros pour un enfant.
+Pour les enfants : 160 euros de cotisation annuelle plus 25 euros de licence, soit **185** euros au total.
 
-Attention - L'ASCD demande une cotisation supplémentaire de 10 euros. A verser directement à l'ASCD
+Pour les adultes : 170 euros de cotisation annuelle plus 35 euros de licence, soit **205** euros au total.
+
+Attention - L'**A**ssociation **S**portive et **C**ulturelle de **D**eyme demande une cotisation supplémentaire de 10 euros. A verser directement à l'ASCD.
 
 ## A Ramonville
 
