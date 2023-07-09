@@ -60,8 +60,8 @@ google:
 analytics:
   provider: "google-gtag" # false (default), "google-gtag", "custom"
   google:
-    tracking_id: "UA-138748532-1"
-    anonymize_ip: # true, false (default)
+    tracking_id: "G-V16S8HM7DW"
+    anonymize_ip: false
 
 # Reading Files
 include:
