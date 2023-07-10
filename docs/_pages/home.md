@@ -36,11 +36,13 @@ feature_rows:
 
 ## Introduction
 
-Lone Wolf Theme is a simple bootstrap based jekyll theme.
+Lone Wolf Theme is a simple bootstrap based jekyll theme created by
+[manid2][2].
+
 It is infamous for abstracting away the frontend code using [Bootstrap 4][bs4]
 and [Bootswatch wrappers][bootswatch] to help us focus on the
- <span class="badge badge-primary">content</span> and the
- <span class="badge badge-primary">functions</span>.
+<span class="badge badge-primary">content</span> and the
+<span class="badge badge-primary">functions</span>.
 
 Since there is no good boostrap based theme for [jekyll][jekyll]
 I have created this theme in my free time.
@@ -94,5 +96,5 @@ Use the link to learn how to [contribute][3] to LWT.
 [ani-css]: https://daneden.github.io/animate.css/
 
 [1]: https://manid2.github.io/lone-wolf-theme/
-[2]: https://manid2.github.io/
+[2]: https://manid2.gitlab.io/
 [3]: {{ '/contribute/' | relative_url }}

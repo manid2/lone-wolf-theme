@@ -15,7 +15,7 @@ bootswatch_theme: "united" # cerulean, spacelab, united
 lang: "en_US"
 title: "Lone Wolf Theme"
 description: "A simple bootstrap based jekyll theme."
-url: https://manid2.github.io
+url: https://manid2.gitlab.io
 baseurl: "/lone-wolf-theme"
 author: mani_d2
 twitter:
