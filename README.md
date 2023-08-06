@@ -16,7 +16,6 @@ It uses
 ## Who uses it
 
 - [Lone wolf theme docs][1]
-- [Me, manid2][2]
 
 ## Screenshots
 
@@ -68,5 +67,4 @@ sponsoring.
 [sm-gh-pages]: https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/
 
 [1]: https://manid2.github.io/lone-wolf-theme/
-[2]: https://manid2.gitlab.io/
 [3]: https://manid2.github.io/lone-wolf-theme/contribute/
