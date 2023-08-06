@@ -2,7 +2,13 @@
     <h4>Recent posts</h4>
     <ul>
         {% for post in site.posts limit:5 %}
-        <li><a href="{{ post.url | relative_url }}">{{ post.title | strip }}</a></li>
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title | strip }}</a>
+
+            {% if page.show_ads %}
+              {%- include ads.html ad_src="adsterra" ad_type="ad_links" -%}
+            {% endif %}
+          </li>
         {% endfor %}
     </ul>
 
@@ -13,7 +19,12 @@
         {%- capture link -%}  
             /categories/#posts_in_{{ category | slugify }}_heading
         {%- endcapture -%}
-        <li><a href="{{ link | relative_url }}">{{ category | strip }}</a>
+        <li>
+          <a href="{{ link | relative_url }}">{{ category | strip }}</a>
+
+          {% if page.show_ads %}
+            {%- include ads.html ad_src="adsterra" ad_type="ad_links" -%}
+          {% endif %}
         </li>
         {% endfor %}
     </ul>
@@ -26,12 +37,19 @@
         {%- capture link -%}
             /tags/#posts_in_{{ tag | slugify }}_heading
         {%- endcapture -%}
-        <li><a href="{{ link | relative_url }}">{{ tag | strip }}</a></li>
+        <li>
+          <a href="{{ link | relative_url }}">{{ tag | strip }}</a>
+
+          {% if page.show_ads %}
+            {%- include ads.html ad_src="adsterra" ad_type="ad_links" -%}
+          {% endif %}
+        </li>
         {% endfor %}
     </ul>
     {%- endif -%}
 
     {% if page.show_ads %}
         {%- include ads.html ad_src="google-adsense" ad_type="links" -%}
+        {%- include ads.html ad_src="adsterra" ad_type="ad_banner_small" -%}
     {% endif %}
 </div>

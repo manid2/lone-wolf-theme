@@ -14,14 +14,15 @@
     {% include header.html %}
     <!-- page content -->
     <main class="page-content" role="main">
+      {{ content }}
+
       {%- if page.show_ads -%}
+        <!-- ads section -->
         <section class="container my-3">
-          {%- include ads.html ad_src="google-adsense" ad_type="display" -%}
           {%- include ads.html ad_src="adsterra" ad_type="ad_native_banner" -%}
+          {%- include ads.html ad_src="google-adsense" ad_type="display" -%}
         </section>
       {%- endif -%}
-
-      {{ content }}
     </main>
     <!-- page footer -->
     {% include footer.html %}
