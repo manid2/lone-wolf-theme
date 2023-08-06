@@ -14,18 +14,23 @@
     {% include header.html %}
     <!-- page content -->
     <main class="page-content" role="main">
-      {{ content }}
-
-      <section class="container my-3">
-        {%- if page.show_ads -%}
+      {%- if page.show_ads -%}
+        <section class="container my-3">
           {%- include ads.html ad_src="google-adsense" ad_type="display" -%}
-        {%- endif -%}
-      </section>
+          {%- include ads.html ad_src="adsterra" ad_type="ad_native_banner" -%}
+        </section>
+      {%- endif -%}
+
+      {{ content }}
     </main>
     <!-- page footer -->
     {% include footer.html %}
   </div>
   {% include scripts.html %}
+  {%- if page.show_ads -%}
+    <script type='text/javascript' src='//pl20220116.highcpmrevenuegate.com/7f/c4/72/7fc4729b41e6def7678efe899c1db986.js'></script>
+    <script async="async" data-cfasync="false" src="//pl20260188.highcpmrevenuegate.com/9a0b7e3f5ef184780fa822e1002f7dbe/invoke.js"></script>
+  {%- endif -%}
 </body>
 
 </html>

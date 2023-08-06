@@ -39,6 +39,8 @@ feature_rows:
 Lone Wolf Theme is a simple bootstrap based jekyll theme created by
 [manid2][2].
 
+[Click here for ad...][adsterra_dl]
+
 It is infamous for abstracting away the frontend code using [Bootstrap 4][bs4]
 and [Bootswatch wrappers][bootswatch] to help us focus on the
 <span class="badge badge-primary">content</span> and the
@@ -98,3 +100,5 @@ Use the link to learn how to [contribute][3] to LWT.
 [1]: https://manid2.github.io/lone-wolf-theme/
 [2]: https://manid2.gitlab.io/
 [3]: {{ '/contribute/' | relative_url }}
+
+[adsterra_dl]: https://www.highcpmrevenuegate.com/tk17ncqp?key=484c772258d73d54a528cc874518bfaa
