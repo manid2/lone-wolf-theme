@@ -17,6 +17,14 @@ It uses
 
 - [Lone wolf theme docs][1]
 
+Support
+-------
+
+Kindly support this theme development by donating at [Buy me a
+coffee][md2_bmc_link].
+
+[![Mani Kumar Buy Me a Coffee QR code][md2_bmc_qr_img]][md2_bmc_link]
+
 ## Screenshots
 
 ![Lone wolf theme screenshot][lwt_ss_all_img]
@@ -68,3 +76,6 @@ sponsoring.
 
 [1]: https://manid2.github.io/lone-wolf-theme/
 [3]: https://manid2.github.io/lone-wolf-theme/contribute/
+
+[md2_bmc_link]: https://www.buymeacoffee.com/manid2
+[md2_bmc_qr_img]: https://manid2.gitlab.io/images/md2_bmc_qr.png

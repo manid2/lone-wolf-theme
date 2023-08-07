@@ -45,6 +45,14 @@ It uses [Bootstrap 4][bs4] and [Bootswatch wrappers][bootswatch] to style the
 content and [animate.css][ani-css] for animations. Initially based on popular
 Jekyll theme [minimal mistakes][min-mis].
 
+Support
+-------
+
+Kindly support this theme development by donating at [Buy me a
+coffee][md2_bmc_link].
+
+[![Mani Kumar Buy Me a Coffee QR code][md2_bmc_qr_img]][md2_bmc_link]
+
 <!-- Links in the post -->
 [jekyll]: https://jekyllrb.com/
 [min-mis]: https://mmistakes.github.io/minimal-mistakes/
@@ -55,3 +63,6 @@ Jekyll theme [minimal mistakes][min-mis].
 [md2]: https://manid2.gitlab.io/
 
 [adsterra_dl]: https://www.highcpmrevenuegate.com/tk17ncqp?key=484c772258d73d54a528cc874518bfaa
+
+[md2_bmc_link]: https://www.buymeacoffee.com/manid2
+[md2_bmc_qr_img]: https://manid2.gitlab.io/images/md2_bmc_qr.png
