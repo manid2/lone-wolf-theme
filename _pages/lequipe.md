@@ -38,7 +38,7 @@ Nicolas - BPJEPS en 2020
 
 JP - BPJEPS en 2022
 
-<img src="/assets/images/JeanPhi_C.jpg" width="200" height="200" />
+<img src="/assets/images/_6161058.jpg" width="200" height="200" />
 
 ## Les assistants
 
@@ -47,6 +47,8 @@ JP - BPJEPS en 2022
 ### Max Labrousse
 
 Max, titulaire du gant bleu en low kick, prépare son BMF 1 pour la Toussaint 2023.
+
+<img src="/assets/images/_6161125.jpg" width="200" height="200" />
 
 ### Mathieu Raimondi
 
