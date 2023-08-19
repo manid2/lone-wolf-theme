@@ -12,8 +12,9 @@ En 2019, Alice et Jean-Philippe Castaing, Nicolas et Ratchana Simonet, et Mathie
 
 Le bureau est constitué de 3 des membres fondateurs
 
-|Présidente|Alice Castaing|
-|Secrétaire|Ratchana Simonet|
+|Présidente|Ratchana Simonet|
+|Vice-Présidente|Gaëlle Allehaux|
+|Secrétaire|Julien Boyer|
 |Trésorier|Mathieu Raimondi|
 
 ## Les Coachs
@@ -23,8 +24,6 @@ Le bureau est constitué de 3 des membres fondateurs
 ### Nicolas Simonet
 
 Nicolas - BPJEPS en 2021
-
-<!--![Toto](/assets/images/Nicolas_S.jpg)-->
 
 <img src="/assets/images/Nicolas_S1.jpg" width="200" height="150" />
 
@@ -40,3 +39,15 @@ Nicolas - BPJEPS en 2020
 JP - BPJEPS en 2022
 
 <img src="/assets/images/JeanPhi_C.jpg" width="200" height="200" />
+
+## Les assistants
+
+2 assistants, en cours de formation participent également à l'encadrement des cours.
+
+### Max Labrousse
+
+Max, titulaire du gant bleu en low kick, prépare son BMF 1 pour la Toussaint 2023.
+
+### Mathieu Raimondi
+
+Mathieu est titulaire du gant bleu low kick et du BMF1, et accompagne vos enfants depuis la saison 2022.
