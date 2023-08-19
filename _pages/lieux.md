@@ -4,7 +4,7 @@ title: "Lieux des cours"
 permalink: /Lieux/
 ---
 
-Le club propose ses cours sur 2 communes du Lauragais.
+Le club vous accueille dans 4 salles:
 
 ## A Deyme
 
@@ -14,12 +14,12 @@ Des cours enfants de 16h45 à 17h45 tous les jeudis. Rendez-vous au **Dojo**
 
 ## A Ramonville
 
-Une seule adresse - le 10 avenue des crêtes à Ramonville-Saint-Agne (Crossfit Rive Droite).
+Au 10 avenue des crêtes (Crossfit Rive Droite).
 
-Des cours adultes tous les jours de la semaine de 19h à 20 heures 30, et plus encore! 
-
-Des cours enfants tous les mercredi de 15h à 16h ou de 16h à 17h, en fonction du niveau.
+Nous accueillons les compétiteurs les lundi et jeudi de 19h00 à 20h30 à l'étage. 
 
 <img style="margin:0 auto; width : 100%;" src="/assets/images/Planning_2022.png">
 
-<!---![Toto](/assets/images/Planning_2022.png)--->
+## Nouveauté 2023 - A Toulouse!
+
+Au Pôle sport de l'université Paul Sabatier, le mardi de 19h à 21h30, le mercredi de 15 à 17h pour les enfants et de 20h à 21h30 pour les adultes, et le vendredi de 18h à 20h30.
