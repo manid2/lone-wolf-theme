@@ -10,8 +10,6 @@ En 2019, Alice et Jean-Philippe Castaing, Nicolas et Ratchana Simonet, et Mathie
 
 ## Le Bureau
 
-Le bureau est constitué de 3 des membres fondateurs
-
 |Présidente|Ratchana Simonet|
 |Vice-Présidente|Gaëlle Allehaux|
 |Secrétaire|Julien Boyer|
