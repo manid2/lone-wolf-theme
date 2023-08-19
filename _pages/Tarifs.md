@@ -22,4 +22,6 @@ Tous les tarifs dans le tableau récapitulatif ci-dessous.
 
 <img style="margin:0 auto; width : 100%;" src="/assets/images/Tarifs_2022.png">
 
-<!---![Toto1](/assets/images/tarifs_2022.png)--->
+![image](https://github.com/Albator2000/albator2000.github.io/assets/96571918/7dad2667-a8dc-4f06-9409-f2270760d6a4)
+
+
