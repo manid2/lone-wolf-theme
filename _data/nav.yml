@@ -1,39 +1,45 @@
 # header links
 header:
-  - title: "Features"
-    url: "/features/"
-    description: "List of features in the theme"
-  - title: "Source"
-    url: "/source/"
-    description: "Theme source code"
-  - title: "About"
-    url: "/about/"
-    description: "A little story about the theme"
+  - title: "Lieux / Horaires"
+    url: "/Lieux/"
+    description: "Lieux et Horaires des cours"
+  - title: "Tarifs"
+    url: "/Tarifs/"
+    description: "Tarifs"
+  - title: "L'équipe"
+    url: "/Lequipe/"
+    description: "Présentation de l'équipe"
+  - title: "Team Building"
+    url: "/Teambuilding/"
+    description: "Venez pratiquer la boxe entre collègues"
+  - title: "Boutique"
+    url: "https://www.vestiaire-officiel.com/shop/clubboxemiseaupoing"
+    description: "Notre boutique en ligne"
 
 # footer links
 footer:
-  - owner: "Your Name"
+  - owner: "Association Mise aux Poings Boxing Club"
     url: # link if any
     description: # tool tip for your url
-    bio: "I am awesome" # short bio
-    address: # location
+    bio: "Boxe pour tous" # short bio
+    address: 10 avenue des crêtes, 31320 Ramonville Saint Agne
   - social:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: # github link
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: # linkedin profile link
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: # twitter profile link
+#    - label: "GitHub"
+#      icon: "fab fa-fw fa-github"
+#      url: # github link
+#    - label: "LinkedIn"
+#      icon: "fab fa-fw fa-linkedin"
+#      url: # linkedin profile link
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook"
+      url: https://www.facebook.com/miseauxpoings
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: # instagram profile link
-  - feed:
-    - label: "Sitemap"
-      icon: "fas fa-sitemap"
-      url: "/sitemap.xml"
-    - label: "RSS"
-      icon: "fas fa-fw fa-rss-square"
-      url: "/feed.xml"
+      url: https://www.instagram.com/mise_aux_poings/?hl=fr
+#  - feed:
+#    - label: "Sitemap"
+#      icon: "fas fa-sitemap"
+#      url: "/sitemap.xml"
+#    - label: "RSS"
+#      icon: "fas fa-fw fa-rss-square"
+#      url: "/feed.xml"
