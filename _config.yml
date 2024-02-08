@@ -170,7 +170,6 @@ defaults:
       show_toc: true
       share: true
       show_comments: false
-      show_ads: false
   # any page
   - scope:
       path: ""

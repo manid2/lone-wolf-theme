@@ -171,14 +171,12 @@ defaults:
       show_toc: true
       share: true
       show_comments: false
-      show_ads: true
   # _pages
   - scope:
       path: ""
       type: pages
     values:
       layout: page
-      show_ads: true
   # any page
   - scope:
       path: ""

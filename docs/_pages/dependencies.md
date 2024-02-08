@@ -44,8 +44,6 @@ List of dependencies for reference and upgrades.
 - fontawesome, v5.7.2
 - analytics
   - google analytics
-- ads
-  - google adsense
 - search-providers
   - google custom search
 - comments-providers
